@@ -1,0 +1,1385 @@
+<!doctype html>
+<!--
+  Hushkey — free website template by 8B · https://github.com/8bsite/product-landing-page-template
+  MIT License (code) · Photos: Unsplash License, see CREDITS.md · Fonts: Google Fonts (OFL)
+  One HTML file, no build step. Notes for people and AI agents: README.md and AGENTS.md.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hushkey — eleven soft keys for the whole house</title>
+<meta name="description" content="Hushkey is a palm-sized slab of soft keys for the lights, music, blinds and heat. No screen, no app to open: press, and the room answers.">
+<meta name="generator" content="8B Templates">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hushkey — eleven soft keys for the whole house">
+<meta property="og:description" content="Hushkey is a palm-sized slab of soft keys for the lights, music, blinds and heat. No screen, no app to open: press, and the room answers.">
+<meta property="og:image" content="https://your-domain.example/preview.png" data-8b-placeholder="og-image">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23232427'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'38'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23e4e5e8'%3EH%3C%2Ftext%3E%3C%2Fsvg%3E" data-8b-placeholder="favicon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/mozillaheadline/v1/QGYLz-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6dLYRvBSDSOuerB_FOBB4ElYhZu.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://fonts.gstatic.com/s/mozillatext/v1/SZc-3FrnJ7S7WZIff2mJ7TbD7xNK.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Mozilla Headline';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillaheadline/v1/QGYLz-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6dLYRvBSDSOuerB_FOBB4ElbBZuhco.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Mozilla Headline';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 75%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillaheadline/v1/QGYLz-UXahmCOps4kyMKGuSA9pYt2_P-w2kFrS88o6dLYRvBSDSOuerB_FOBB4ElYhZu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Mozilla Text';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillatext/v1/SZc-3FrnJ7S7WZIff2mJ7TbD4RNKuCc.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Mozilla Text';
+  font-style: normal;
+  font-weight: 300 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mozillatext/v1/SZc-3FrnJ7S7WZIff2mJ7TbD7xNK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style data-8b-part="layers">
+@layer tokens, base, atoms, layout, sections, scenes;
+</style>
+<style data-8b-part="tokens">
+@layer tokens {
+:root {
+  --color-1: #e4e5e8;
+  --color-2: #232427;
+  --color-3: #fbfbfc;
+  --color-4: #8d8e93;
+  --color-5: #55565b;
+  --color-6: #b4b5b9;
+  --color-7: #2c2d31;
+  --color-8: #a9abb0;
+  --color-9: #121315;
+  --font-1: "Mozilla Headline", "Mozilla Headline Fallback", "Arial Narrow", Arial, sans-serif;
+  --font-2: "Mozilla Text", "Mozilla Text Fallback", Arial, sans-serif;
+  --radius-1: 999px;
+  --radius-2: 26px;
+  --radius-3: 34px;
+  --shadow-1: 0 .5em .9em -.3em color-mix(in srgb, var(--color-2) 34%, transparent), 0 .1em .18em color-mix(in srgb, var(--color-2) 14%, transparent), inset 0 .1em .08em var(--color-3), inset 0 -.14em .3em color-mix(in srgb, var(--color-2) 9%, transparent);
+  --shadow-2: inset 0 .28em .5em color-mix(in srgb, var(--color-2) 26%, transparent), inset 0 -.12em .16em var(--color-3);
+  --shadow-3: inset 0 .5em 1em color-mix(in srgb, var(--color-2) 20%, transparent), inset 0 -.2em .3em var(--color-3);
+  --shadow-4: 0 .5em .9em -.25em color-mix(in srgb, var(--color-9) 85%, transparent), inset 0 .08em .06em color-mix(in srgb, var(--color-3) 16%, transparent), inset 0 -.14em .3em color-mix(in srgb, var(--color-9) 40%, transparent);
+  --shadow-5: inset 0 .28em .5em color-mix(in srgb, var(--color-9) 75%, transparent), inset 0 -.1em .14em color-mix(in srgb, var(--color-3) 10%, transparent);
+  --shadow-6: 0 2px 1px var(--color-3), 0 -1px 1px color-mix(in srgb, var(--color-2) 30%, transparent);
+  --shadow-7: 0 2px 1px color-mix(in srgb, var(--color-3) 12%, transparent), 0 -1px 1px var(--color-9);
+  --shadow-8: 0 18px 40px -18px color-mix(in srgb, var(--color-2) 32%, transparent), 0 2px 4px color-mix(in srgb, var(--color-2) 8%, transparent), inset 0 1px 0 var(--color-3);
+  --space-1: clamp(104px, 15vh, 176px);
+  --space-2: clamp(16px, 4vw, 48px);
+}
+}
+</style>
+<style data-8b-part="base">
+@layer base {
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+body { margin: 0; background: var(--color-1); color: var(--color-2); font-family: var(--font-2); font-size: 17px; line-height: 1.55; font-weight: 400; overflow-x: clip; }
+h1, h2, h3, p, ul, ol, figure, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--color-2); outline-offset: 4px; }
+@font-face { font-family: "Mozilla Headline Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 70.9%; ascent-override: 134%; descent-override: 36.7%; line-gap-override: 0%; }
+@font-face { font-family: "Mozilla Text Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Helvetica Bold"); font-weight: 550 799; size-adjust: 103.3%; ascent-override: 91.9%; descent-override: 25.2%; line-gap-override: 0%; }
+@font-face { font-family: "Mozilla Text Fallback"; src: local("Arial"), local("ArialMT"), local("Helvetica"); font-weight: 100 549; size-adjust: 106.6%; ascent-override: 89.2%; descent-override: 24.4%; line-gap-override: 0%; }
+}
+</style>
+<style data-8b-part="system">
+@layer atoms {
+.m-text { font-family: var(--font-2); font-stretch: 100%; font-size: 17px; font-weight: 400; line-height: 1.55; letter-spacing: 0; text-transform: none; font-style: normal; max-width: 34em; text-wrap: pretty; }
+.m-text-2 { font-family: var(--font-1); font-stretch: 75%; font-size: clamp(48px, 6.2vw, 92px); font-weight: 700; line-height: .9; letter-spacing: -.005em; text-transform: none; font-style: normal; color: var(--color-5); text-shadow: var(--shadow-6); text-wrap: balance; }
+.m-text-3 { font-family: var(--font-2); font-stretch: 100%; font-size: 13px; font-weight: 300; line-height: 1.4; letter-spacing: .42em; text-transform: uppercase; font-style: normal; }
+.m-text-4 { font-family: var(--font-2); font-stretch: 100%; font-size: 13px; font-weight: 600; line-height: 1.25; letter-spacing: .08em; text-transform: uppercase; font-style: normal; }
+.m-text-5 { font-family: var(--font-1); font-stretch: 75%; font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: .005em; text-transform: none; font-style: normal; }
+.m-text-6 { font-family: var(--font-1); font-stretch: 75%; font-size: clamp(48px, 6.2vw, 92px); font-weight: 700; line-height: .9; letter-spacing: -.005em; text-transform: none; font-style: normal; color: var(--color-1); text-shadow: var(--shadow-7); text-wrap: balance; }
+.m-text-7 { font-family: var(--font-2); font-stretch: 100%; font-size: 20px; font-weight: 400; line-height: 1.45; letter-spacing: 0; text-transform: none; font-style: normal; max-width: 28em; text-wrap: pretty; }
+.m-text-8 { font-family: var(--font-2); font-stretch: 100%; font-size: 15px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-5); }
+.m-text-9 { font-family: var(--font-2); font-stretch: 100%; font-size: 15px; font-weight: 400; line-height: 1.5; letter-spacing: 0; text-transform: none; font-style: normal; color: var(--color-8); }
+
+.m-btn { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 30px; border: 0; border-radius: var(--radius-1); background: linear-gradient(180deg, var(--color-3), var(--color-1) 72%); box-shadow: var(--shadow-1); color: var(--color-2); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1.2; letter-spacing: .02em; text-decoration: none; white-space: nowrap; cursor: pointer; isolation: isolate; -webkit-tap-highlight-color: transparent; }
+.m-btn__dent { position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: linear-gradient(180deg, color-mix(in srgb, var(--color-1), var(--color-2) 10%), var(--color-1) 55%, var(--color-3)); box-shadow: var(--shadow-2); opacity: 0; transition: opacity .35s ease; }
+.m-btn__label { transition: transform .35s ease; }
+@media (hover: hover) { .m-btn:hover .m-btn__dent { opacity: .6; } .m-btn:hover .m-btn__label { transform: translateY(1px); } }
+.m-btn:active .m-btn__dent { opacity: 1; transition-duration: .08s; }
+.m-btn:active .m-btn__label { transform: translateY(2px); transition-duration: .08s; }
+.m-btn-2 { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 54px; padding: 0 30px; border: 0; border-radius: var(--radius-1); background: linear-gradient(180deg, color-mix(in srgb, var(--color-7), var(--color-3) 9%), var(--color-7) 72%); box-shadow: var(--shadow-4); color: var(--color-1); font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1.2; letter-spacing: .02em; text-decoration: none; white-space: nowrap; cursor: pointer; isolation: isolate; -webkit-tap-highlight-color: transparent; }
+.m-btn-2__dent { position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: linear-gradient(180deg, color-mix(in srgb, var(--color-7), var(--color-9) 45%), var(--color-7)); box-shadow: var(--shadow-5); opacity: 0; transition: opacity .35s ease; }
+.m-btn-2__label { transition: transform .35s ease; }
+@media (hover: hover) { .m-btn-2:hover .m-btn-2__dent { opacity: .6; } .m-btn-2:hover .m-btn-2__label { transform: translateY(1px); } }
+.m-btn-2:active .m-btn-2__dent { opacity: 1; transition-duration: .08s; }
+.m-btn-2:active .m-btn-2__label { transform: translateY(2px); transition-duration: .08s; }
+.m-link { display: inline-block; padding-bottom: 3px; color: inherit; font-family: var(--font-2); font-size: 16px; font-weight: 600; line-height: 1.3; letter-spacing: .01em; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; transition: background-size .3s ease; }
+@media (hover: hover) { .m-link:hover { background-size: 100% 3px; } }
+
+.m-key { position: relative; display: inline-grid; place-items: center; inline-size: 4.6em; aspect-ratio: 1; padding: 0; border: 0; border-radius: 50%; background: none; color: var(--color-4); font-family: var(--font-2); font-stretch: 100%; font-weight: 400; line-height: 1; -webkit-tap-highlight-color: transparent; }
+.m-key__cap { position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, var(--color-3), var(--color-1) 62%, color-mix(in srgb, var(--color-1), var(--color-2) 6%)); box-shadow: var(--shadow-1); }
+.m-key__dent { position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, color-mix(in srgb, var(--color-1), var(--color-2) 11%), var(--color-1) 52%, var(--color-3)); box-shadow: var(--shadow-2); opacity: 0; }
+.m-key__label { position: relative; display: grid; place-items: center; font-size: 1.05em; letter-spacing: .04em; }
+.m-key__label svg { inline-size: 1.55em; height: auto; fill: currentColor; }
+.m-key.is-on .m-key__dent, .m-key[aria-pressed="true"] .m-key__dent, .m-key[aria-expanded="true"] .m-key__dent { opacity: 1; }
+button.m-key { cursor: pointer; color: var(--color-5); }
+button.m-key .m-key__dent { transition: opacity .25s ease; }
+button.m-key::after { content: ""; position: absolute; inset: -.3em; border: 1.5px solid var(--color-4); border-radius: inherit; opacity: 0; transform: scale(.9); transition: opacity .3s ease, transform .3s ease; }
+@media (hover: hover) { button.m-key:hover::after { opacity: 1; transform: none; } }
+button.m-key:active .m-key__dent { opacity: 1; }
+.m-key-2 { position: relative; display: grid; grid-template-rows: 1fr auto; align-items: start; justify-items: start; inline-size: 100%; aspect-ratio: 1; padding: 18px 18px 16px; border: 0; border-radius: var(--radius-2); background: none; color: var(--color-2); font-family: var(--font-2); font-size: 16px; text-align: left; cursor: pointer; isolation: isolate; -webkit-tap-highlight-color: transparent; }
+.m-key-2__cap { position: absolute; inset: 0; z-index: -1; border-radius: inherit; background: linear-gradient(180deg, var(--color-3), var(--color-1) 62%, color-mix(in srgb, var(--color-1), var(--color-2) 6%)); box-shadow: var(--shadow-1); }
+.m-key-2__dent { position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, color-mix(in srgb, var(--color-1), var(--color-2) 11%), var(--color-1) 52%, var(--color-3)); box-shadow: var(--shadow-2); opacity: 0; transition: opacity .3s ease; }
+.m-key-2__label { font-size: 15px; font-weight: 600; line-height: 1.2; letter-spacing: .01em; transition: transform .3s ease; }
+.m-key-2__state { font-size: 12px; font-weight: 500; line-height: 1.2; letter-spacing: .1em; text-transform: uppercase; color: var(--color-5); }
+.m-key-2__on { display: none; }
+.m-key-2[aria-pressed="true"] .m-key-2__dent { opacity: 1; }
+.m-key-2[aria-pressed="true"] .m-key-2__label { transform: translateY(2px); }
+.m-key-2[aria-pressed="true"] .m-key-2__on { display: inline; color: var(--color-2); }
+.m-key-2[aria-pressed="true"] .m-key-2__off { display: none; }
+@media (hover: hover) { .m-key-2:hover .m-key-2__dent { opacity: .6; } .m-key-2[aria-pressed="true"]:hover .m-key-2__dent { opacity: .85; } }
+.m-key-2:active .m-key-2__dent { opacity: 1; transition-duration: .08s; }
+.m-key-3 { position: relative; display: inline-grid; place-items: center; flex: none; inline-size: 3.1em; aspect-ratio: 1; border-radius: 50%; color: var(--color-8); font-size: 16px; }
+.m-key-3__cap { position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, color-mix(in srgb, var(--color-7), var(--color-3) 10%), var(--color-7) 70%); box-shadow: var(--shadow-4); }
+.m-key-3__dent { position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(180deg, color-mix(in srgb, var(--color-7), var(--color-9) 45%), var(--color-7)); box-shadow: var(--shadow-5); opacity: 0; transition: opacity .3s ease; }
+.m-key-3__label { position: relative; display: grid; place-items: center; }
+.m-key-3__label svg { inline-size: 1.15em; height: auto; fill: currentColor; }
+.m-key-3::after { content: ""; position: absolute; inset: -.3em; border: 1.5px solid var(--color-8); border-radius: inherit; opacity: 0; transform: scale(.9); transition: opacity .3s ease, transform .3s ease; }
+@media (hover: hover) { :hover > .m-key-3::after { opacity: 1; transform: none; } }
+.m-well { position: relative; display: inline-flex; gap: .6em; padding: .6em; border: 1.5px solid var(--color-4); border-radius: var(--radius-1); }
+.m-tick { display: inline-grid; justify-items: center; gap: 8px; font-family: var(--font-2); font-stretch: 100%; font-size: 13px; font-weight: 500; line-height: 1.2; letter-spacing: .12em; text-transform: uppercase; font-style: normal; }
+.m-tick__line { inline-size: 1.5px; block-size: 30px; background: var(--color-4); transform-origin: 50% 0; }
+.m-photo { position: relative; padding: 10px; border-radius: var(--radius-3); background: var(--color-1); box-shadow: var(--shadow-3); font-size: 16px; }
+.m-photo img { inline-size: 100%; block-size: 100%; object-fit: cover; border-radius: inherit; }
+.m-surface { background: linear-gradient(180deg, var(--color-3), var(--color-1) 46%); box-shadow: var(--shadow-8); border-radius: var(--radius-3); color: var(--color-2); }
+.m-field { display: block; inline-size: 100%; min-height: 56px; padding: 15px 22px; border: 0; border-radius: var(--radius-1); background: var(--color-7); box-shadow: var(--shadow-5); color: var(--color-1); font-family: var(--font-2); font-size: 16px; line-height: 1.4; appearance: none; }
+textarea.m-field { min-height: 150px; border-radius: var(--radius-2); resize: vertical; }
+select.m-field { background-image: linear-gradient(45deg, transparent 50%, var(--color-8) 50%), linear-gradient(-45deg, transparent 50%, var(--color-8) 50%); background-position: right 26px top 50%, right 20px top 50%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 48px; }
+.m-field::placeholder { color: var(--color-8); }
+}
+</style>
+<style data-8b-part="layout">
+@layer layout {
+.wrap { inline-size: 100%; max-inline-size: 1280px; margin-inline: auto; padding-inline: var(--space-2); }
+.sr-only { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+</style>
+<style data-8b-part="section:nav">
+@layer sections {
+#nav .nav__bar { position: fixed; inset: 14px var(--space-2) auto; z-index: 50; max-inline-size: 1184px; margin-inline: auto; display: flex; align-items: center; gap: 24px; min-height: 64px; padding: 6px 6px 6px 26px; border-radius: var(--radius-1); }
+#nav .nav__brand { font-family: var(--font-1); font-stretch: 75%; font-weight: 700; font-size: 26px; line-height: 1; letter-spacing: .03em; color: var(--color-5); text-shadow: var(--shadow-6); text-decoration: none; }
+#nav .nav__links { margin-left: auto; }
+#nav .nav__links ul { display: flex; gap: 26px; }
+#nav .nav__links .m-link { font-size: 15px; }
+#nav .nav__cta { min-height: 50px; font-size: 15px; }
+#nav .nav__open, #nav .nav__close { display: none; font-size: 12px; }
+#nav .nav__menu-title { display: none; }
+@media (max-width: 899px) {
+  #nav .nav__bar { min-height: 60px; gap: 10px; padding-left: 20px; }
+  #nav .nav__brand { font-size: 24px; }
+  #nav .nav__cta { margin-left: auto; min-height: 46px; padding-inline: 20px; }
+  #nav .nav__open { display: inline-grid; inline-size: 46px; font-size: 10px; }
+  #nav .nav__links { position: fixed; inset: 0; z-index: 60; display: none; margin: 0; padding: 26px var(--space-2) 40px; background: var(--color-1); overflow-y: auto; }
+  #nav[data-open] .nav__links { display: grid; align-content: start; gap: 40px; }
+  #nav .nav__menu-head { display: flex; align-items: center; justify-content: space-between; }
+  #nav .nav__menu-title { display: block; font-family: var(--font-1); font-stretch: 75%; font-weight: 700; font-size: 26px; color: var(--color-5); text-shadow: var(--shadow-6); }
+  #nav .nav__close { display: inline-grid; inline-size: 46px; font-size: 10px; }
+  #nav .nav__links ul { flex-direction: column; gap: 6px; }
+  #nav .nav__links .m-link { font-family: var(--font-1); font-stretch: 75%; font-size: 44px; font-weight: 700; padding-bottom: 6px; }
+}
+@media (min-width: 900px) { #nav .nav__menu-head { display: none; } }
+}
+</style>
+<style data-8b-part="section:hero">
+@layer sections {
+#hero { position: relative; z-index: 2; min-height: 100svh; padding: 132px 0 64px; background: linear-gradient(180deg, var(--color-6), var(--color-1) 48%); display: grid; align-items: center; }
+#hero .hero__inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 40px; }
+#hero .hero__title { font-size: clamp(60px, 8vw, 116px); max-width: 6.2em; }
+#hero .hero__line { display: block; }
+#hero .hero__caption { margin-top: 26px; color: var(--color-5); }
+#hero .hero__lede { margin-top: 30px; }
+#hero .hero__actions { margin-top: 34px; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 30px; }
+#hero .hero__note { margin-top: 22px; }
+#hero .hero__stage { justify-self: end; }
+#hero .hero__panel { position: relative; inline-size: 38em; block-size: 33em; font-size: clamp(9px, 1.2vw, 16px); }
+#hero .hero__cluster { position: absolute; }
+#hero .hero__pad { left: 0; top: 0; inline-size: 17em; block-size: 17em; }
+#hero .hero__diamond { position: absolute; inset: 1.75em; border: 1.5px solid var(--color-4); border-radius: 3.3em; transform: rotate(45deg); }
+#hero .hero__pad .m-key { position: absolute; }
+#hero .hero__k-up { left: 6.2em; top: .9em; }
+#hero .hero__k-left { left: .9em; top: 6.2em; }
+#hero .hero__k-ok { left: 6.2em; top: 6.2em; }
+#hero .hero__k-right { left: 11.5em; top: 6.2em; }
+#hero .hero__k-down { left: 6.2em; top: 11.5em; }
+#hero .hero__k-ok .m-key__label { font-size: 1.3em; color: var(--color-5); }
+#hero .hero__pad-dent, #hero .hero__seg-dent { position: absolute; border-radius: 50%; box-shadow: var(--shadow-2); background: radial-gradient(circle at 50% 70%, transparent 46%, color-mix(in srgb, var(--color-2) 7%, transparent)); pointer-events: none; }
+#hero .hero__pad-dent { left: 6.2em; top: .9em; inline-size: 4.6em; block-size: 4.6em; }
+#hero .hero__seg { left: 20.6em; top: 1.1em; }
+#hero .hero__seg .m-key { inline-size: 5.6em; }
+#hero .hero__seg-dent { left: calc(.6em + 1.5px); top: calc(.6em + 1.5px); inline-size: 5.6em; block-size: 5.6em; transform: translateX(6.2em); }
+#hero .hero__play { inset: 0; }
+#hero .hero__contour { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; overflow: visible; }
+#hero .hero__contour path { fill: none; stroke: var(--color-4); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+#hero .hero__play .m-key { position: absolute; }
+#hero .hero__k-play { left: 22.1em; top: 13.1em; inline-size: 10.8em; }
+#hero .hero__k-play .m-key__label svg { inline-size: 3.4em; }
+#hero .hero__k-pause { left: 19.46em; top: 21.21em; inline-size: 5.4em; }
+#hero .hero__steps { left: 3.6em; top: 19.6em; }
+#hero .hero__steps .m-well { flex-direction: column; }
+#hero .hero__steps .m-key { inline-size: 4.8em; }
+#hero .hero__tick { position: absolute; left: 34.2em; top: 1.6em; }
+@media (max-width: 899px) {
+  #hero { padding: 104px 0 36px; align-items: start; }
+  #hero .hero__inner { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  #hero .hero__title { font-size: clamp(50px, 15.6vw, 84px); }
+  #hero .hero__caption { margin-top: 16px; font-size: 11px; letter-spacing: .36em; }
+  #hero .hero__lede { margin-top: 16px; font-size: 17px; }
+  #hero .hero__actions { margin-top: 20px; }
+  #hero .hero__note { display: none; }
+  #hero .hero__stage { justify-self: center; }
+  #hero .hero__panel { font-size: min(9.2px, calc((100vw - 32px) / 38)); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes hero-settle { from { transform: translateY(.34em); } }
+  @keyframes hero-swell { from { transform: scale(.9) translateY(1.2em); } }
+  @keyframes hero-seg { 0%, 36% { transform: translateX(6.2em); } 48%, 86% { transform: translateX(0); } 98%, 100% { transform: translateX(6.2em); } }
+  @keyframes hero-pad { 0%, 17% { transform: translate(0, 0); } 25%, 42% { transform: translate(5.3em, 5.3em); } 50%, 67% { transform: translate(0, 10.6em); } 75%, 92% { transform: translate(-5.3em, 5.3em); } 100% { transform: translate(0, 0); } }
+  #hero .hero__line { animation: hero-settle .8s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #hero .hero__line:nth-child(2) { animation-delay: .06s; }
+  #hero .hero__line:nth-child(3) { animation-delay: .12s; }
+  #hero .hero__cluster { animation: hero-swell .9s cubic-bezier(.2, .7, .2, 1) backwards; }
+  #hero .hero__seg { animation-delay: .08s; }
+  #hero .hero__play { animation-delay: .16s; }
+  #hero .hero__steps { animation-delay: .24s; }
+  #hero .hero__seg-dent { animation: hero-seg 5.4s cubic-bezier(.65, 0, .25, 1) 1.2s infinite; }
+  #hero .hero__pad-dent { animation: hero-pad 7.2s cubic-bezier(.65, 0, .25, 1) .6s infinite; }
+  #hero[data-idle] .hero__seg-dent, #hero[data-idle] .hero__pad-dent { animation-play-state: paused; }
+}
+}
+</style>
+<style data-8b-part="section:states">
+@layer sections {
+#states { position: relative; z-index: 1; padding: var(--space-1) 0; }
+#states .states__inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: center; }
+#states .states__head { display: grid; gap: 26px; align-content: start; }
+#states .states__keys { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 30px; }
+#states .states__slot { position: relative; }
+#states .states__slot::before { content: ""; position: absolute; inset: -11px; border: 1.5px solid var(--color-4); border-radius: calc(var(--radius-2) + 11px); }
+@media (max-width: 899px) {
+  #states .states__inner { grid-template-columns: minmax(0, 1fr); gap: 44px; }
+  #states .states__keys { order: -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 28px; padding-inline: 11px; }
+}
+}
+</style>
+<style data-8b-part="section:modes">
+@layer sections {
+#modes { position: relative; padding: var(--space-1) 0 calc(var(--space-1) * .6); }
+#modes .modes__head { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 26px 56px; align-items: end; margin-bottom: 64px; }
+#modes .modes__stage { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+#modes .modes__pad { position: relative; inline-size: 26em; block-size: 26em; font-size: clamp(9px, .95vw, 13px); justify-self: center; }
+#modes .modes__diamond { position: absolute; inset: 6.25em; border: 1.5px solid var(--color-4); border-radius: 3.6em; transform: rotate(45deg); }
+#modes .modes__pad .m-key { position: absolute; inline-size: 5em; }
+#modes .modes__k-up { left: 10.5em; top: 4.7em; }
+#modes .modes__k-left { left: 4.7em; top: 10.5em; }
+#modes .modes__k-ok { left: 10.5em; top: 10.5em; }
+#modes .modes__k-right { left: 16.3em; top: 10.5em; }
+#modes .modes__k-down { left: 10.5em; top: 16.3em; }
+#modes .modes__k-ok .m-key__label { font-size: 1.3em; color: var(--color-5); }
+#modes .modes__dir { position: absolute; color: var(--color-2); }
+#modes .modes__dir--up { left: 50%; top: 0; transform: translateX(-50%); }
+#modes .modes__dir--right { right: 0; top: 50%; transform: translateY(-50%); }
+#modes .modes__dir--down { left: 50%; bottom: 0; transform: translateX(-50%); }
+#modes .modes__dir--left { left: 0; top: 50%; transform: translateY(-50%); }
+#modes .modes__hint { margin-top: 18px; text-align: center; }
+#modes .modes__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+#modes .modes__item { position: relative; display: grid; }
+#modes .modes__photo { aspect-ratio: 4 / 3; }
+#modes .modes__caption { position: relative; margin: -46px 18px 0; padding: 20px 22px 22px; display: grid; gap: 8px; border-radius: var(--radius-2); }
+#modes .modes__caption .m-text-8 { color: var(--color-5); }
+@media (max-width: 899px) {
+  #modes .modes__head { grid-template-columns: minmax(0, 1fr); margin-bottom: 40px; }
+  #modes .modes__stage { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  #modes .modes__pad { font-size: min(11px, calc((100vw - 32px) / 27)); }
+  #modes .modes__list { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:modes">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #modes[data-stage] .modes__track { block-size: 340vh; }
+  #modes[data-stage] .modes__stage { position: sticky; top: 0; block-size: 100vh; padding-top: 100px; padding-bottom: 32px; align-items: center; }
+  #modes[data-stage] .modes__list { position: relative; display: block; block-size: min(64vh, 560px); border-radius: var(--radius-3); }
+  #modes[data-stage] .modes__item { position: absolute; inset: 0; }
+  #modes[data-stage] .modes__photo { position: absolute; inset: 0; aspect-ratio: auto; }
+  #modes[data-stage] .modes__caption { position: absolute; left: 22px; bottom: 22px; margin: 0; max-inline-size: 340px; }
+  @media (max-width: 899px) {
+    #modes[data-stage] .modes__stage { padding-top: 90px; padding-bottom: 20px; gap: 18px; align-content: start; }
+    #modes[data-stage] .modes__list { block-size: min(50svh, 420px); order: -1; }
+    #modes[data-stage] .modes__pad { font-size: min(8px, calc((100svh - 560px) / 26)); }
+    #modes[data-stage] .modes__caption { left: 12px; right: 12px; bottom: 12px; padding: 14px 16px 16px; }
+    #modes[data-stage] .modes__hint { display: none; }
+  }
+}
+}
+</style>
+<style data-8b-part="section:dimmer">
+@layer sections {
+#dimmer { position: relative; padding: var(--space-1) 0; }
+#dimmer .dimmer__head { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 26px 56px; align-items: end; margin-bottom: 56px; }
+#dimmer .dimmer__rig { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 34px; align-items: stretch; }
+#dimmer .dimmer__photo { aspect-ratio: 16 / 9; }
+#dimmer .dimmer__fader { display: grid; grid-template-rows: auto 1fr auto; justify-items: center; gap: 18px; font-size: 16px; }
+#dimmer .dimmer__groove { position: relative; inline-size: 64px; block-size: 100%; min-block-size: 220px; padding: 8px; border-radius: var(--radius-1); box-shadow: var(--shadow-3); }
+#dimmer .dimmer__thumb { position: absolute; left: 8px; right: 8px; top: 8px; block-size: 92px; border-radius: var(--radius-1); background: linear-gradient(180deg, var(--color-3), var(--color-1) 62%, color-mix(in srgb, var(--color-1), var(--color-2) 6%)); box-shadow: var(--shadow-1); }
+#dimmer .dimmer__thumb::after { content: ""; position: absolute; left: 30%; right: 30%; top: 50%; block-size: 1.5px; background: var(--color-4); }
+#dimmer .dimmer__steps { flex-direction: column; }
+#dimmer .dimmer__steps .m-key { inline-size: 3.3em; }
+#dimmer .dimmer__notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 56px; }
+#dimmer .dimmer__note { display: grid; gap: 10px; padding-top: 18px; border-top: 1.5px solid var(--color-4); }
+@media (max-width: 899px) {
+  #dimmer .dimmer__head { grid-template-columns: minmax(0, 1fr); margin-bottom: 36px; }
+  #dimmer .dimmer__rig { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  #dimmer .dimmer__photo { aspect-ratio: 4 / 3.4; }
+  #dimmer .dimmer__fader { grid-template-rows: none; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 14px; }
+  #dimmer .dimmer__groove { inline-size: 100%; block-size: 60px; min-block-size: 0; }
+  #dimmer .dimmer__thumb { left: auto; right: 8px; top: 8px; bottom: 8px; inline-size: 84px; block-size: auto; }
+  #dimmer .dimmer__thumb::after { left: 50%; right: auto; top: 30%; bottom: 30%; inline-size: 1.5px; block-size: auto; }
+  #dimmer .dimmer__steps { flex-direction: row; }
+  #dimmer .dimmer__fader .m-tick { display: none; }
+  #dimmer .dimmer__notes { grid-template-columns: minmax(0, 1fr); gap: 22px; margin-top: 40px; }
+}
+}
+</style>
+<style data-8b-part="section:quiet">
+@layer sections {
+#quiet { position: relative; padding: var(--space-1) 0; }
+#quiet .quiet__lines { display: grid; gap: 14px; }
+#quiet .quiet__line { display: flex; align-items: flex-end; gap: 28px; font-size: clamp(54px, 9.4vw, 148px); line-height: .92; }
+#quiet .quiet__line:nth-child(2) { margin-left: 14%; }
+#quiet .quiet__line:nth-child(3) { margin-left: 5%; }
+#quiet .quiet__off { display: inline-grid; justify-items: center; gap: 0; margin-bottom: .14em; font-size: 15px; flex: none; }
+#quiet .quiet__off .m-key { inline-size: 3em; }
+#quiet .quiet__off .m-tick { color: var(--color-2); }
+#quiet .quiet__off .m-tick__line { block-size: 22px; }
+#quiet .quiet__line > span:first-child { display: inline-block; }
+#quiet .quiet__text { margin: 56px 0 0 auto; max-width: 30em; }
+@media (max-width: 899px) {
+  #quiet .quiet__line { flex-wrap: wrap; gap: 4px 16px; font-size: clamp(46px, 13.4vw, 80px); }
+  #quiet .quiet__line:nth-child(2), #quiet .quiet__line:nth-child(3) { margin-left: 0; }
+  #quiet .quiet__off { display: flex; align-items: center; gap: 10px; margin: 0 0 0 auto; font-size: 12px; }
+  #quiet .quiet__off .m-tick__line { display: none; }
+  #quiet .quiet__off .m-key { inline-size: 2.6em; }
+  #quiet .quiet__text { margin-top: 40px; }
+}
+}
+</style>
+<style data-8b-part="section:chords">
+@layer sections {
+#chords { position: relative; padding: var(--space-1) 0; overflow-x: clip; }
+#chords .chords__head { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 26px 56px; align-items: end; }
+#chords .chords__stage { display: grid; justify-items: center; gap: 18px; padding: 48px 0 24px; }
+#chords .chords__art { position: relative; inline-size: 36em; block-size: 34em; font-size: clamp(9px, min(1.26vw, calc((100vh - 240px) / 34)), 17px); }
+#chords .chords__contour { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; overflow: visible; }
+#chords .chords__contour path { fill: none; stroke: var(--color-4); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+#chords .chords__art .m-key { position: absolute; }
+#chords .chords__a { left: 11em; top: 6em; inline-size: 18em; }
+#chords .chords__b { left: 7.35em; top: 20.51em; inline-size: 10em; }
+#chords .chords__a .m-key__label { font-size: 2.4em; color: var(--color-5); }
+#chords .chords__b .m-key__label { font-size: 1.6em; color: var(--color-5); }
+#chords .chords__result { text-align: center; }
+#chords .chords__result strong { color: var(--color-2); font-weight: inherit; }
+#chords .chords__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin-top: 40px; }
+#chords .chords__item { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 18px; align-items: start; }
+#chords .chords__mini { inline-size: 76px; block-size: 76px; overflow: visible; }
+#chords .chords__mini path { fill: none; stroke: var(--color-4); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+#chords .chords__mini circle { fill: var(--color-3); }
+#chords .chords__item h3 { margin-bottom: 6px; font-size: 26px; }
+@media (max-width: 899px) {
+  #chords .chords__head { grid-template-columns: minmax(0, 1fr); }
+  #chords .chords__art { font-size: min(9.4px, calc((100vw - 32px) / 36)); }
+  #chords .chords__list { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:chords">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #chords[data-stage] .chords__track { block-size: 250vh; }
+  #chords[data-stage] .chords__stage { position: sticky; top: 0; block-size: 100vh; align-content: center; padding: 90px 0 24px; }
+}
+}
+</style>
+<style data-8b-part="section:material">
+@layer sections {
+#material { position: relative; padding: var(--space-1) 0; }
+#material .material__head { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 26px 56px; align-items: end; margin-bottom: 72px; }
+#material .material__list { display: grid; grid-template-columns: 0.8fr 1.1fr 1fr; gap: 48px; align-items: start; }
+#material .material__item { display: grid; justify-items: start; gap: 16px; }
+#material .material__item .m-tick { justify-self: center; }
+#material .material__photo { inline-size: 100%; }
+#material .material__item--pill .material__photo { aspect-ratio: 1 / 1.7; border-radius: var(--radius-1); }
+#material .material__item--circle { margin-top: 120px; }
+#material .material__item--circle .material__photo { aspect-ratio: 1; border-radius: 50%; }
+#material .material__item--square { margin-top: 40px; }
+#material .material__item--square .material__photo { aspect-ratio: 1; }
+#material .material__item h3 { margin-top: 6px; }
+@media (max-width: 899px) {
+  #material .material__head { grid-template-columns: minmax(0, 1fr); margin-bottom: 44px; }
+  #material .material__list { grid-template-columns: minmax(0, 1fr); gap: 52px; }
+  #material .material__item--pill .material__photo { aspect-ratio: 1 / 1.25; inline-size: 78%; justify-self: center; }
+  #material .material__item--circle, #material .material__item--square { margin-top: 0; }
+  #material .material__item--circle .material__photo { inline-size: 86%; justify-self: center; }
+}
+}
+</style>
+<style data-8b-part="section:editions">
+@layer sections {
+#editions { position: relative; padding: var(--space-1) 0 0; }
+#editions .editions__head { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 26px 56px; align-items: end; margin-bottom: 64px; }
+#editions .editions__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
+#editions .editions__item { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 36px; align-items: center; perspective: 900px; }
+#editions .editions__panel { position: relative; inline-size: 24em; block-size: 34em; font-size: clamp(7px, .72vw, 10px); border-radius: 3em; transform-origin: 50% 100%; }
+#editions .editions__item--chalk .editions__panel { background: linear-gradient(180deg, var(--color-3), var(--color-1) 40%); box-shadow: var(--shadow-8); }
+#editions .editions__item--graphite .editions__panel { background: linear-gradient(180deg, color-mix(in srgb, var(--color-7), var(--color-3) 10%), var(--color-7) 40%); box-shadow: var(--shadow-4); }
+#editions .editions__panel > * { position: absolute; }
+#editions .editions__diamond { left: 6.5em; top: 3.5em; inline-size: 11em; block-size: 11em; border: 1.5px solid var(--color-4); border-radius: 2.4em; transform: rotate(45deg); }
+#editions .editions__panel .m-key, #editions .editions__panel .m-key-3 { inline-size: 3.6em; font-size: 1em; }
+#editions .e-up { left: 10.2em; top: 2.6em; }
+#editions .e-left { left: 4.6em; top: 7.2em; }
+#editions .e-ok { left: 10.2em; top: 7.2em; }
+#editions .e-right { left: 15.8em; top: 7.2em; }
+#editions .e-down { left: 10.2em; top: 11.8em; }
+#editions .e-prev { left: 4.2em; top: 18.6em; }
+#editions .e-next { left: 8.6em; top: 18.6em; }
+#editions .editions__panel .e-play { left: 13.4em; top: 18.2em; inline-size: 6.6em; }
+#editions .e-pause { left: 4.2em; top: 26.4em; }
+#editions .e-plus { left: 10.2em; top: 26.4em; }
+#editions .e-minus { left: 16.2em; top: 26.4em; }
+#editions .editions__panel .m-key-3 .m-key-3__label svg, #editions .editions__panel .m-key .m-key__label svg { inline-size: 1.4em; }
+#editions .editions__body { display: grid; gap: 14px; justify-items: start; }
+#editions .editions__price { font-family: var(--font-1); font-stretch: 75%; font-weight: 700; font-size: 44px; line-height: 1; color: var(--color-2); }
+#editions .editions__terms { margin-top: 36px; text-align: center; }
+#editions .editions__switch { position: relative; z-index: 3; display: grid; justify-items: center; padding: 72px 0 0; }
+#editions .editions__switch .m-key { inline-size: 8.4em; font-size: 16px; }
+#editions .editions__floor { block-size: 22vh; min-block-size: 140px; }
+@media (max-width: 1099px) {
+  #editions .editions__item { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
+  #editions .editions__body { justify-items: center; }
+}
+@media (max-width: 899px) {
+  #editions .editions__head { grid-template-columns: minmax(0, 1fr); margin-bottom: 44px; }
+  #editions .editions__list { grid-template-columns: minmax(0, 1fr); gap: 64px; }
+  #editions .editions__panel { font-size: 9px; }
+  #editions .editions__switch .m-key { inline-size: 7em; }
+}
+}
+</style>
+<style data-8b-part="section:faq">
+@layer sections {
+#faq { position: relative; padding: calc(var(--space-1) * .8) 0 var(--space-1); color: var(--color-1); }
+#faq .faq__flood { position: absolute; inset: 0; z-index: 0; background: var(--color-7); }
+#faq .faq__inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+#faq .faq__head { display: grid; gap: 22px; }
+#faq .faq__list { display: grid; gap: 14px; }
+#faq .faq__item { border-radius: var(--radius-2); background: linear-gradient(180deg, color-mix(in srgb, var(--color-7), var(--color-3) 5%), var(--color-7)); box-shadow: var(--shadow-4); font-size: 16px; }
+#faq .faq__item summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 16px 16px 16px 26px; cursor: pointer; list-style: none; font-family: var(--font-2); font-size: 18px; font-weight: 500; line-height: 1.35; }
+#faq .faq__item summary::-webkit-details-marker { display: none; }
+#faq .faq__item p { padding: 0 26px 24px; color: var(--color-8); }
+#faq .faq__item .m-key-3 .is-minus { display: none; }
+#faq .faq__item[open] .m-key-3__dent { opacity: 1; }
+#faq .faq__item[open] .m-key-3 .is-plus { display: none; }
+#faq .faq__item[open] .m-key-3 .is-minus { display: block; }
+#faq :focus-visible { outline-color: var(--color-1); }
+@media (max-width: 899px) {
+  #faq .faq__inner { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  #faq .faq__item summary { font-size: 17px; padding-left: 20px; }
+  #faq .faq__item p { padding: 0 20px 20px; }
+}
+}
+</style>
+<style data-8b-part="scene-style:faq">
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  #faq[data-flood] .faq__flood { top: calc(-1 * var(--faq-reach, 0px)); }
+}
+}
+</style>
+<style data-8b-part="section:contact">
+@layer sections {
+#contact { position: relative; margin-top: -1px; padding: var(--space-1) 0; background: var(--color-7); color: var(--color-1); }
+#contact .contact__inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 64px; align-items: start; }
+#contact .contact__head { display: grid; gap: 24px; }
+#contact .contact__details { display: grid; gap: 22px; margin-top: 18px; }
+#contact .contact__details div { display: grid; gap: 4px; }
+#contact .contact__details dd { font-size: 19px; }
+#contact .contact__form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 18px; }
+#contact .contact__field { display: grid; gap: 10px; }
+#contact .contact__field--wide { grid-column: 1 / -1; }
+#contact .contact__actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 26px; margin-top: 6px; }
+#contact .contact__status { min-height: 1.5em; }
+#contact :focus-visible { outline-color: var(--color-1); }
+@media (max-width: 899px) {
+  #contact .contact__inner { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  #contact .contact__form { grid-template-columns: minmax(0, 1fr); }
+}
+}
+</style>
+<style data-8b-part="section:footer">
+@layer sections {
+#footer { position: relative; margin-top: -1px; padding: 40px 0 36px; background: var(--color-7); color: var(--color-1); overflow: clip; }
+#footer .footer__inner { container-type: inline-size; }
+#footer .footer__mark { display: block; font-size: min(38cqi, 100cqi / (var(--len) * .456)); line-height: .8; letter-spacing: 0; white-space: nowrap; }
+#footer .footer__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px 40px; margin-top: 28px; padding-top: 26px; border-top: 1.5px solid color-mix(in srgb, var(--color-8) 40%, transparent); }
+#footer .footer__links ul { display: flex; flex-wrap: wrap; gap: 12px 26px; }
+#footer :focus-visible { outline-color: var(--color-1); }
+}
+</style>
+</head>
+<body>
+<!-- navigation: top bar: wordmark, section links, Pre-order button; phone menu overlay -->
+<header id="nav" class="nav" data-8b-section="navigation">
+  <div class="nav__bar m-surface">
+    <a class="nav__brand" href="#hero">HUSHKEY</a>
+    <nav class="nav__links" id="menu" aria-label="Main">
+      <div class="nav__menu-head">
+        <span class="nav__menu-title" aria-hidden="true">HUSHKEY</span>
+        <button class="m-key nav__close" type="button" aria-label="Close menu"><span class="m-key__cap" aria-hidden="true"><span class="m-key__dent"></span></span><span class="m-key__label" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.3 4.9 12 10.6l5.7-5.7 1.4 1.4-5.7 5.7 5.7 5.7-1.4 1.4-5.7-5.7-5.7 5.7-1.4-1.4 5.7-5.7-5.7-5.7z"/></svg></span></button>
+      </div>
+      <ul>
+        <li><a class="m-link" href="#states">Keys</a></li>
+        <li><a class="m-link" href="#modes">Modes</a></li>
+        <li><a class="m-link" href="#chords">Chords</a></li>
+        <li><a class="m-link" href="#editions">Finishes</a></li>
+        <li><a class="m-link" href="#faq">FAQ</a></li>
+        <li><a class="m-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="m-btn nav__cta" href="#editions"><span class="m-btn__dent" aria-hidden="true"></span><span class="m-btn__label">Pre-order</span></a>
+    <button class="m-key nav__open" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span class="m-key__cap" aria-hidden="true"><span class="m-key__dent"></span></span><span class="m-key__label" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5h16v2H4zm0 7h16v2H4z"/></svg></span></button>
+  </div>
+</header>
+<main id="main">
+<!-- hero: first screen: headline, two buttons, the eleven-key product panel drawn in HTML/CSS (animation: scene:hero) -->
+<section id="hero" class="hero" data-8b-section="hero" aria-labelledby="hero-title">
+  <div class="hero__inner wrap">
+    <div class="hero__copy">
+      <h1 id="hero-title" class="m-text-2 hero__title"><span class="hero__line">Eleven keys</span> <span class="hero__line">for the whole</span> <span class="hero__line">house.</span></h1>
+      <p class="m-text-3 hero__caption">Tactile home controls</p>
+      <p class="m-text-7 hero__lede">A palm-sized slab of soft keys for the lights, the music, the blinds and the heat. No screen to wake, no app to open. Press, and the room answers.</p>
+      <div class="hero__actions">
+        <a class="m-btn" href="#editions"><span class="m-btn__dent" aria-hidden="true"></span><span class="m-btn__label">Pre-order · €189</span></a>
+        <a class="m-link" href="#states">Meet the keys</a>
+      </div>
+      <p class="m-text-8 hero__note">Ships in March. Joins the hub your home already has.</p>
+    </div>
+    <div class="hero__stage" aria-hidden="true">
+      <div class="hero__panel">
+        <div class="hero__cluster hero__pad">
+          <span class="hero__diamond"></span>
+          <span class="m-key hero__k-up"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M12 6.5 19 17H5z"/></svg></span></span>
+          <span class="m-key hero__k-left"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M6.5 12 17 5v14z"/></svg></span></span>
+          <span class="m-key hero__k-ok"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label">OK</span></span>
+          <span class="m-key hero__k-right"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M17.5 12 7 19V5z"/></svg></span></span>
+          <span class="m-key hero__k-down"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M12 17.5 5 7h14z"/></svg></span></span>
+          <span class="hero__pad-dent"></span>
+        </div>
+        <div class="hero__cluster hero__seg">
+          <span class="m-well">
+            <span class="m-key"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M6.5 12 17 5v14z"/></svg></span></span>
+            <span class="m-key"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M17.5 12 7 19V5z"/></svg></span></span>
+          </span>
+          <span class="hero__seg-dent"></span>
+        </div>
+        <div class="hero__cluster hero__play">
+          <svg class="hero__contour" viewBox="0 0 38 33" preserveAspectRatio="none"><path d="M 21.2 18.1 C 21.1 20.2 20.8 20.4 19.9 21.1 A 3.6 3.6 0 1 0 25 26.1 C 25.7 25.2 25.9 24.9 27.9 24.8 A 6.3 6.3 0 1 0 21.2 18.1 Z"/></svg>
+          <span class="m-key hero__k-play"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span></span>
+          <span class="m-key hero__k-pause"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M7.5 6h3v12h-3zm6 0h3v12h-3z"/></svg></span></span>
+        </div>
+        <div class="hero__cluster hero__steps">
+          <span class="m-well">
+            <span class="m-key"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg></span></span>
+            <span class="m-key is-on"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- states: keyboard of eight toggle keys (Up is ready / Down is on) (animation: scene:states) -->
+<section id="states" class="states" data-8b-section="states" aria-labelledby="states-title">
+  <div class="states__inner wrap">
+    <header class="states__head">
+      <h2 id="states-title" class="m-text-2" data-8b-motion="deboss">Up is ready. Down is on.</h2>
+      <p class="m-text">Every Hushkey key has two positions you can feel in the dark. Raised waits for you; pressed is running. Your thumb reads the panel before your eyes do — try the keys.</p>
+      <p class="m-text-8">A pressed key stays down until a second press lifts it. All off lifts everything at once.</p>
+    </header>
+    <ul class="states__keys">
+      <li class="states__slot"><button class="m-key-2" type="button" aria-pressed="false"><span class="m-key-2__cap" aria-hidden="true"><span class="m-key-2__dent"></span></span><span class="m-key-2__label">Hall light</span><span class="m-key-2__state" aria-hidden="true"><span class="m-key-2__off">Ready</span><span class="m-key-2__on">On</span></span></button></li>
+      <li class="states__slot"><button class="m-key-2" type="button" aria-pressed="true"><span class="m-key-2__cap" aria-hidden="true"><span class="m-key-2__dent"></span></span><span class="m-key-2__label">Reading lamp</span><span class="m-key-2__state" aria-hidden="true"><span class="m-key-2__off">Ready</span><span class="m-key-2__on">On</span></span></button></li>
+      <li class="states__slot"><button class="m-key-2" type="button" aria-pressed="false"><span class="m-key-2__cap" aria-hidden="true"><span class="m-key-2__dent"></span></span><span class="m-key-2__label">Kitchen</span><span class="m-key-2__state" aria-hidden="true"><span class="m-key-2__off">Ready</span><span class="m-key-2__on">On</span></span></button></li>
+      <li class="states__slot"><button class="m-key-2" type="button" aria-pressed="true"><span class="m-key-2__cap" aria-hidden="true"><span class="m-key-2__dent"></span></span><span class="m-key-2__label">Blinds down</span><span class="m-key-2__state" aria-hidden="true"><span class="m-key-2__off">Ready</span><span class="m-key-2__on">On</span></span></button></li>
+      <li class="states__slot"><button class="m-key-2" type="button" aria-pressed="true"><span class="m-key-2__cap" aria-hidden="true"><span class="m-key-2__dent"></span></span><span class="m-key-2__label">Music</span><span class="m-key-2__state" aria-hidden="true"><span class="m-key-2__off">Ready</span><span class="m-key-2__on">On</span></span></button></li>
+      <li class="states__slot"><button class="m-key-2" type="button" aria-pressed="false"><span class="m-key-2__cap" aria-hidden="true"><span class="m-key-2__dent"></span></span><span class="m-key-2__label">Porch</span><span class="m-key-2__state" aria-hidden="true"><span class="m-key-2__off">Ready</span><span class="m-key-2__on">On</span></span></button></li>
+      <li class="states__slot"><button class="m-key-2" type="button" aria-pressed="true"><span class="m-key-2__cap" aria-hidden="true"><span class="m-key-2__dent"></span></span><span class="m-key-2__label">Warm floor</span><span class="m-key-2__state" aria-hidden="true"><span class="m-key-2__off">Ready</span><span class="m-key-2__on">On</span></span></button></li>
+      <li class="states__slot"><button class="m-key-2" type="button" data-all-off><span class="m-key-2__cap" aria-hidden="true"><span class="m-key-2__dent"></span></span><span class="m-key-2__label">All off</span><span class="m-key-2__state" aria-hidden="true"><span class="m-key-2__off">Lifts all</span><span class="m-key-2__on">Lifted</span></span></button></li>
+    </ul>
+  </div>
+</section>
+
+<!-- modes: sticky stage: D-pad drives four room photos (Morning, Desk, Evening, Away) (animation: scene:modes) -->
+<section id="modes" class="modes" data-8b-section="modes" aria-labelledby="modes-title">
+  <div class="modes__inner wrap">
+    <header class="modes__head">
+      <h2 id="modes-title" class="m-text-2" data-8b-motion="deboss">One pad. Four moods of the house.</h2>
+      <p class="m-text">Each direction on the pad holds a whole room at once — light, sound, blinds and heat. Press it and the house turns toward you; hold OK to save the room as it is now.</p>
+    </header>
+    <div class="modes__track">
+      <div class="modes__stage">
+        <div class="modes__pad-wrap">
+          <div class="modes__pad" aria-hidden="true">
+            <span class="modes__diamond"></span>
+            <span class="m-key modes__k-up"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M12 6.5 19 17H5z"/></svg></span></span>
+            <span class="m-key modes__k-left"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M6.5 12 17 5v14z"/></svg></span></span>
+            <span class="m-key modes__k-ok"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label">OK</span></span>
+            <span class="m-key modes__k-right"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M17.5 12 7 19V5z"/></svg></span></span>
+            <span class="m-key modes__k-down"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M12 17.5 5 7h14z"/></svg></span></span>
+            <span class="m-text-4 modes__dir modes__dir--up">Morning</span>
+            <span class="m-text-4 modes__dir modes__dir--right">Desk</span>
+            <span class="m-text-4 modes__dir modes__dir--down">Evening</span>
+            <span class="m-text-4 modes__dir modes__dir--left">Away</span>
+          </div>
+          <p class="m-text-8 modes__hint">Hold OK for two seconds to save a mode.</p>
+        </div>
+        <ol class="modes__list">
+          <li class="modes__item" data-dir="up">
+            <figure class="m-photo modes__photo"><img srcset="https://images.unsplash.com/photo-1759523621990-58a409b68fad?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9ybmluZyUyMGxpZ2h0JTIwYmVkcm9vbSUyMHdpbmRvdyUyMG1pbmltYWx8ZW58MXwwfHx8MTc5MTIxMDQ1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=360&amp;q=80 360w, https://images.unsplash.com/photo-1759523621990-58a409b68fad?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9ybmluZyUyMGxpZ2h0JTIwYmVkcm9vbSUyMHdpbmRvdyUyMG1pbmltYWx8ZW58MXwwfHx8MTc5MTIxMDQ1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80 400w, https://images.unsplash.com/photo-1759523621990-58a409b68fad?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9ybmluZyUyMGxpZ2h0JTIwYmVkcm9vbSUyMHdpbmRvdyUyMG1pbmltYWx8ZW58MXwwfHx8MTc5MTIxMDQ1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1759523621990-58a409b68fad?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9ybmluZyUyMGxpZ2h0JTIwYmVkcm9vbSUyMHdpbmRvdyUyMG1pbmltYWx8ZW58MXwwfHx8MTc5MTIxMDQ1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w" sizes="(max-width: 767px) 95vw, 28vw" style="background:#c0a68c" src="https://images.unsplash.com/photo-1759523621990-58a409b68fad?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bW9ybmluZyUyMGxpZ2h0JTIwYmVkcm9vbSUyMHdpbmRvdyUyMG1pbmltYWx8ZW58MXwwfHx8MTc5MTIxMDQ1OHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Morning light coming through sheer curtains into a dim bedroom" width="1600" height="1067" loading="lazy" decoding="async"></figure>
+            <div class="m-surface modes__caption">
+              <span class="m-text-4">Up</span>
+              <h3 class="m-text-5">Morning</h3>
+              <p class="m-text-8">Blinds rise a third, the kitchen warms up, the radio comes on low.</p>
+            </div>
+          </li>
+          <li class="modes__item" data-dir="right">
+            <figure class="m-photo modes__photo"><img srcset="https://images.unsplash.com/photo-1601642964568-1917224f4e4d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bWluaW1hbCUyMGRlc2slMjB3b3Jrc3BhY2UlMjBncmV5fGVufDF8MHx8fDE3OTEyMTA0NDR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=360&amp;q=80 360w, https://images.unsplash.com/photo-1601642964568-1917224f4e4d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bWluaW1hbCUyMGRlc2slMjB3b3Jrc3BhY2UlMjBncmV5fGVufDF8MHx8fDE3OTEyMTA0NDR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80 400w, https://images.unsplash.com/photo-1601642964568-1917224f4e4d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bWluaW1hbCUyMGRlc2slMjB3b3Jrc3BhY2UlMjBncmV5fGVufDF8MHx8fDE3OTEyMTA0NDR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1601642964568-1917224f4e4d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bWluaW1hbCUyMGRlc2slMjB3b3Jrc3BhY2UlMjBncmV5fGVufDF8MHx8fDE3OTEyMTA0NDR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w" sizes="(max-width: 767px) 95vw, 28vw" style="background:#f3f3d9" src="https://images.unsplash.com/photo-1601642964568-1917224f4e4d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8bWluaW1hbCUyMGRlc2slMjB3b3Jrc3BhY2UlMjBncmV5fGVufDF8MHx8fDE3OTEyMTA0NDR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="A grey desk lamp and a cup on a white desk in low sunlight" width="1600" height="1067" loading="lazy" decoding="async"></figure>
+            <div class="m-surface modes__caption">
+              <span class="m-text-4">Right</span>
+              <h3 class="m-text-5">Desk</h3>
+              <p class="m-text-8">Cool light on the table, the music steps aside, the hall stays dark.</p>
+            </div>
+          </li>
+          <li class="modes__item" data-dir="down">
+            <figure class="m-photo modes__photo"><img srcset="https://images.unsplash.com/photo-1772208392358-19e96bee3a73?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=360&amp;q=80 360w, https://images.unsplash.com/photo-1772208392358-19e96bee3a73?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80 400w, https://images.unsplash.com/photo-1772208392358-19e96bee3a73?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1772208392358-19e96bee3a73?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w" sizes="(max-width: 767px) 95vw, 28vw" style="background:#40260c" src="https://images.unsplash.com/photo-1772208392358-19e96bee3a73?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="A corduroy sofa beside a floor lamp in warm evening light" width="1600" height="1067" loading="lazy" decoding="async"></figure>
+            <div class="m-surface modes__caption">
+              <span class="m-text-4">Down</span>
+              <h3 class="m-text-5">Evening</h3>
+              <p class="m-text-8">Lamps at a third, blinds closed, warmth gathered in the sofa corner.</p>
+            </div>
+          </li>
+          <li class="modes__item" data-dir="left">
+            <figure class="m-photo modes__photo"><img srcset="https://images.unsplash.com/photo-1787539386321-b1a220fe24b6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZW1wdHklMjBoYWxsd2F5JTIwZnJvbnQlMjBkb29yJTIwbWluaW1hbHxlbnwxfDB8fHwxNzkxMjEwNDQ1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=360&amp;q=80 360w, https://images.unsplash.com/photo-1787539386321-b1a220fe24b6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZW1wdHklMjBoYWxsd2F5JTIwZnJvbnQlMjBkb29yJTIwbWluaW1hbHxlbnwxfDB8fHwxNzkxMjEwNDQ1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80 400w, https://images.unsplash.com/photo-1787539386321-b1a220fe24b6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZW1wdHklMjBoYWxsd2F5JTIwZnJvbnQlMjBkb29yJTIwbWluaW1hbHxlbnwxfDB8fHwxNzkxMjEwNDQ1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1787539386321-b1a220fe24b6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZW1wdHklMjBoYWxsd2F5JTIwZnJvbnQlMjBkb29yJTIwbWluaW1hbHxlbnwxfDB8fHwxNzkxMjEwNDQ1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w" sizes="(max-width: 767px) 95vw, 28vw" style="background:#404040" src="https://images.unsplash.com/photo-1787539386321-b1a220fe24b6?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8ZW1wdHklMjBoYWxsd2F5JTIwZnJvbnQlMjBkb29yJTIwbWluaW1hbHxlbnwxfDB8fHwxNzkxMjEwNDQ1fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="An open white door casting a long shadow across a pale wooden floor" width="1600" height="1067" loading="lazy" decoding="async"></figure>
+            <div class="m-surface modes__caption">
+              <span class="m-text-4">Left</span>
+              <h3 class="m-text-5">Away</h3>
+              <p class="m-text-8">Everything off but the porch, which wakes at dusk and sleeps at midnight.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- dimmer: fader + plus key over one room photo (grey to colour on scroll) (animation: scene:dimmer) -->
+<section id="dimmer" class="dimmer" data-8b-section="dimmer" aria-labelledby="dimmer-title">
+  <div class="dimmer__inner wrap">
+    <header class="dimmer__head">
+      <h2 id="dimmer-title" class="m-text-2" data-8b-motion="deboss">Hold plus. The light arrives slowly.</h2>
+      <p class="m-text">Keep a thumb on plus and the room brightens as gently as you like — a short hold for a nudge, a long one for a sunrise. Minus does the same in reverse, down to a glow.</p>
+    </header>
+    <div class="dimmer__rig">
+      <figure class="m-photo dimmer__photo"><img srcset="https://images.unsplash.com/photo-1773098587088-f0a3aaab48a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=410&amp;q=80 410w, https://images.unsplash.com/photo-1773098587088-f0a3aaab48a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1773098587088-f0a3aaab48a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=820&amp;q=80 820w, https://images.unsplash.com/photo-1773098587088-f0a3aaab48a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w, https://images.unsplash.com/photo-1773098587088-f0a3aaab48a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1060&amp;q=80 1060w, https://images.unsplash.com/photo-1773098587088-f0a3aaab48a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80 1280w, https://images.unsplash.com/photo-1773098587088-f0a3aaab48a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80 1600w" sizes="(max-width: 767px) 109vw, 83vw" style="background:#40260c" src="https://images.unsplash.com/photo-1773098587088-f0a3aaab48a8?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8bGl2aW5nJTIwcm9vbSUyMGxhbXAlMjBldmVuaW5nfGVufDF8MHx8fDE3OTEyMTA0NDV8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="A living room with a sofa, a reading chair and a lamp in warm evening light" width="1600" height="1067" loading="lazy" decoding="async"></figure>
+      <div class="dimmer__fader" aria-hidden="true">
+        <span class="m-tick"><span class="m-tick__label">Level</span><span class="m-tick__line" aria-hidden="true"></span></span>
+        <div class="dimmer__groove"><span class="dimmer__thumb"></span></div>
+        <span class="m-well dimmer__steps"><span class="m-key dimmer__plus"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg></span></span><span class="m-key dimmer__minus"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span></span>
+      </div>
+    </div>
+    <ul class="dimmer__notes">
+      <li class="dimmer__note"><span class="m-text-4">Tap</span><p class="m-text-8">One step brighter or darker, the way a dimmer should feel.</p></li>
+      <li class="dimmer__note"><span class="m-text-4">Hold</span><p class="m-text-8">The longer you hold, the slower the fade: two seconds become a whole minute.</p></li>
+      <li class="dimmer__note"><span class="m-text-4">Double minus</span><p class="m-text-8">Leaves a low night glow in the hall instead of darkness.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- quiet: short statement: no screen, no app -->
+<section id="quiet" class="quiet" data-8b-section="quiet" aria-labelledby="quiet-title">
+  <div class="quiet__inner wrap">
+    <div class="quiet__lines">
+      <h2 id="quiet-title" class="m-text-2 quiet__line"><span data-8b-motion="deboss">No screen to wake.</span><span class="quiet__off" aria-hidden="true" data-8b-motion="contour"><span class="m-tick"><span class="m-tick__label">Off</span><span class="m-tick__line" aria-hidden="true"></span></span><span class="m-key is-on"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"></span></span></span></h2>
+      <p class="m-text-2 quiet__line"><span data-8b-motion="deboss">No glow at night.</span><span class="quiet__off" aria-hidden="true" data-8b-motion="contour"><span class="m-tick"><span class="m-tick__label">Off</span><span class="m-tick__line" aria-hidden="true"></span></span><span class="m-key is-on"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"></span></span></span></p>
+      <p class="m-text-2 quiet__line"><span data-8b-motion="deboss">No app to open first.</span><span class="quiet__off" aria-hidden="true" data-8b-motion="contour"><span class="m-tick"><span class="m-tick__label">Off</span><span class="m-tick__line" aria-hidden="true"></span></span><span class="m-key is-on"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"></span></span></span></p>
+    </div>
+    <p class="m-text quiet__text">Hushkey keeps every decision in your fingers. The panel has no display, no standby light and no menu: the keys themselves are the interface, and they stay exactly where you left them.</p>
+  </div>
+</section>
+
+<!-- chords: two keys meet and their outlines melt into one (chords) (animation: scene:chords) -->
+<section id="chords" class="chords" data-8b-section="chords" aria-labelledby="chords-title">
+  <div class="chords__inner wrap">
+    <header class="chords__head">
+      <h2 id="chords-title" class="m-text-2" data-8b-motion="deboss">Press two at once. Get a third.</h2>
+      <p class="m-text">Hold two keys together and Hushkey remembers them as a chord. The panel never grows; it simply learns more words, and your hand learns them with it.</p>
+    </header>
+    <div class="chords__track">
+      <div class="chords__stage">
+        <div class="chords__art" aria-hidden="true">
+          <svg class="chords__contour" viewBox="0 0 36 34" preserveAspectRatio="none"><path d="M 9.8 15.8 C 10.1 19.2 9.7 19.6 8.2 21.1 A 6.1 6.1 0 1 0 17.9 28.1 C 18.7 26.2 19 25.7 22.4 24.9 A 10.2 10.2 0 1 0 9.8 15.8 Z"/></svg>
+          <span class="m-key is-on chords__a"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label">Lamp</span></span>
+          <span class="m-key is-on chords__b"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label">Lock</span></span>
+        </div>
+        <p class="m-text-5 chords__result">Lamp + Lock = <strong>Goodnight</strong></p>
+      </div>
+    </div>
+    <ul class="chords__list">
+      <li class="chords__item">
+        <svg class="chords__mini" viewBox="0 0 20 20" aria-hidden="true" data-8b-motion="contour"><path d="M 5.4 9 C 5.5 11 5.3 11.2 4.4 12 A 3.6 3.6 0 1 0 10 16.2 C 10.5 15 10.7 14.7 12.6 14.2 A 5.8 5.8 0 1 0 5.4 9 Z"/><circle cx="11.2" cy="8.6" r="4.6"/><circle cx="6.73" cy="14.74" r="2.6"/></svg>
+        <div><h3 class="m-text-5">Goodnight</h3><p class="m-text-8"><span class="m-text-4">Lamp + Lock</span> — Lights down to a glow, doors locked, heat set for the night.</p></div>
+      </li>
+      <li class="chords__item">
+        <svg class="chords__mini" viewBox="0 0 20 20" aria-hidden="true" data-8b-motion="contour"><path d="M 5.4 9 C 5.5 11 5.3 11.2 4.4 12 A 3.6 3.6 0 1 0 10 16.2 C 10.5 15 10.7 14.7 12.6 14.2 A 5.8 5.8 0 1 0 5.4 9 Z"/><circle cx="11.2" cy="8.6" r="4.6"/><circle cx="6.73" cy="14.74" r="2.6"/></svg>
+        <div><h3 class="m-text-5">Cinema</h3><p class="m-text-8"><span class="m-text-4">Music + Blinds</span> — Blinds shut, lamps low, the speaker turns up by two steps.</p></div>
+      </li>
+      <li class="chords__item">
+        <svg class="chords__mini" viewBox="0 0 20 20" aria-hidden="true" data-8b-motion="contour"><path d="M 5.4 9 C 5.5 11 5.3 11.2 4.4 12 A 3.6 3.6 0 1 0 10 16.2 C 10.5 15 10.7 14.7 12.6 14.2 A 5.8 5.8 0 1 0 5.4 9 Z"/><circle cx="11.2" cy="8.6" r="4.6"/><circle cx="6.73" cy="14.74" r="2.6"/></svg>
+        <div><h3 class="m-text-5">Sunday</h3><p class="m-text-8"><span class="m-text-4">Heat + Kettle</span> — Warm floors and the kettle on at nine, with no alarm at all.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- material: three material cards with texture photos -->
+<section id="material" class="material" data-8b-section="material" aria-labelledby="material-title">
+  <div class="material__inner wrap">
+    <header class="material__head">
+      <h2 id="material-title" class="m-text-2" data-8b-motion="deboss">Made to be found in the dark.</h2>
+      <p class="m-text">Three materials, each chosen for how it feels under a thumb at two in the morning, when the panel is found by touch alone.</p>
+    </header>
+    <ul class="material__list">
+      <li class="material__item material__item--pill">
+        <span class="m-tick" data-8b-motion="contour"><span class="m-tick__label">Cap</span><span class="m-tick__line" aria-hidden="true"></span></span>
+        <figure class="m-photo material__photo" data-8b-motion="rise"><img srcset="https://images.unsplash.com/photo-1784982090927-c47b40ccf794?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c29mdCUyMHJ1YmJlciUyMHRleHR1cmUlMjBtYWNyb3xlbnwxfDJ8fHwxNzkxMjEwNDcwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80 320w, https://images.unsplash.com/photo-1784982090927-c47b40ccf794?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c29mdCUyMHJ1YmJlciUyMHRleHR1cmUlMjBtYWNyb3xlbnwxfDJ8fHwxNzkxMjEwNDcwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80 400w, https://images.unsplash.com/photo-1784982090927-c47b40ccf794?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c29mdCUyMHJ1YmJlciUyMHRleHR1cmUlMjBtYWNyb3xlbnwxfDJ8fHwxNzkxMjEwNDcwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=490&amp;q=80 490w, https://images.unsplash.com/photo-1784982090927-c47b40ccf794?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c29mdCUyMHJ1YmJlciUyMHRleHR1cmUlMjBtYWNyb3xlbnwxfDJ8fHwxNzkxMjEwNDcwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1784982090927-c47b40ccf794?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c29mdCUyMHJ1YmJlciUyMHRleHR1cmUlMjBtYWNyb3xlbnwxfDJ8fHwxNzkxMjEwNDcwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=980&amp;q=80 980w, https://images.unsplash.com/photo-1784982090927-c47b40ccf794?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c29mdCUyMHJ1YmJlciUyMHRleHR1cmUlMjBtYWNyb3xlbnwxfDJ8fHwxNzkxMjEwNDcwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1280&amp;q=80 1280w" sizes="(max-width: 767px) 84vw, 38vw" style="background:#737373" src="https://images.unsplash.com/photo-1784982090927-c47b40ccf794?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c29mdCUyMHJ1YmJlciUyMHRleHR1cmUlMjBtYWNyb3xlbnwxfDJ8fHwxNzkxMjEwNDcwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Soft grey material folded into deep rippling ridges" width="1600" height="1600" loading="lazy" decoding="async"></figure>
+        <h3 class="m-text-5">Soft-touch caps</h3>
+        <p class="m-text-8">Each cap gives a little before it clicks, so a press is never a surprise and a raised key is never mistaken for a pressed one.</p>
+      </li>
+      <li class="material__item material__item--circle">
+        <span class="m-tick" data-8b-motion="contour"><span class="m-tick__label">Back</span><span class="m-tick__line" aria-hidden="true"></span></span>
+        <figure class="m-photo material__photo" data-8b-motion="rise"><img srcset="https://images.unsplash.com/photo-1602913268078-f740e8fa7ac5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGluZW4lMjBmYWJyaWMlMjB0ZXh0dXJlJTIwZ3JleXxlbnwxfDJ8fHwxNzkxMjEwNDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=280&amp;q=80 280w, https://images.unsplash.com/photo-1602913268078-f740e8fa7ac5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGluZW4lMjBmYWJyaWMlMjB0ZXh0dXJlJTIwZ3JleXxlbnwxfDJ8fHwxNzkxMjEwNDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80 400w, https://images.unsplash.com/photo-1602913268078-f740e8fa7ac5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGluZW4lMjBmYWJyaWMlMjB0ZXh0dXJlJTIwZ3JleXxlbnwxfDJ8fHwxNzkxMjEwNDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=550&amp;q=80 550w, https://images.unsplash.com/photo-1602913268078-f740e8fa7ac5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGluZW4lMjBmYWJyaWMlMjB0ZXh0dXJlJTIwZ3JleXxlbnwxfDJ8fHwxNzkxMjEwNDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1602913268078-f740e8fa7ac5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGluZW4lMjBmYWJyaWMlMjB0ZXh0dXJlJTIwZ3JleXxlbnwxfDJ8fHwxNzkxMjEwNDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w" sizes="(max-width: 767px) 73vw, 31vw" style="background:#404040" src="https://images.unsplash.com/photo-1602913268078-f740e8fa7ac5?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8N3x8bGluZW4lMjBmYWJyaWMlMjB0ZXh0dXJlJTIwZ3JleXxlbnwxfDJ8fHwxNzkxMjEwNDY4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="A close fold of grey woven textile" width="1600" height="1600" loading="lazy" decoding="async"></figure>
+        <h3 class="m-text-5">Woven back</h3>
+        <p class="m-text-8">A felted back holds to plaster, tile and glass without a mark, and lifts away when the room changes.</p>
+      </li>
+      <li class="material__item material__item--square">
+        <span class="m-tick" data-8b-motion="contour"><span class="m-tick__label">Body</span><span class="m-tick__line" aria-hidden="true"></span></span>
+        <figure class="m-photo material__photo" data-8b-motion="rise"><img srcset="https://images.unsplash.com/photo-1737034164563-eb7bc29da702?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z3JleSUyMHdvb2wlMjBmZWx0JTIwdGV4dHVyZSUyMGNsb3NlfGVufDF8Mnx8fDE3OTEyMTA0NTZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=330&amp;q=80 330w, https://images.unsplash.com/photo-1737034164563-eb7bc29da702?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z3JleSUyMHdvb2wlMjBmZWx0JTIwdGV4dHVyZSUyMGNsb3NlfGVufDF8Mnx8fDE3OTEyMTA0NTZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=360&amp;q=80 360w, https://images.unsplash.com/photo-1737034164563-eb7bc29da702?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z3JleSUyMHdvb2wlMjBmZWx0JTIwdGV4dHVyZSUyMGNsb3NlfGVufDF8Mnx8fDE3OTEyMTA0NTZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80 400w, https://images.unsplash.com/photo-1737034164563-eb7bc29da702?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z3JleSUyMHdvb2wlMjBmZWx0JTIwdGV4dHVyZSUyMGNsb3NlfGVufDF8Mnx8fDE3OTEyMTA0NTZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=650&amp;q=80 650w, https://images.unsplash.com/photo-1737034164563-eb7bc29da702?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z3JleSUyMHdvb2wlMjBmZWx0JTIwdGV4dHVyZSUyMGNsb3NlfGVufDF8Mnx8fDE3OTEyMTA0NTZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=710&amp;q=80 710w, https://images.unsplash.com/photo-1737034164563-eb7bc29da702?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z3JleSUyMHdvb2wlMjBmZWx0JTIwdGV4dHVyZSUyMGNsb3NlfGVufDF8Mnx8fDE3OTEyMTA0NTZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w" sizes="(max-width: 767px) 86vw, 28vw" style="background:#a6a6a6" src="https://images.unsplash.com/photo-1737034164563-eb7bc29da702?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8Z3JleSUyMHdvb2wlMjBmZWx0JTIwdGV4dHVyZSUyMGNsb3NlfGVufDF8Mnx8fDE3OTEyMTA0NTZ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="Fine grey speckled mineral surface" width="1600" height="1600" loading="lazy" decoding="async"></figure>
+        <h3 class="m-text-5">Mineral body</h3>
+        <p class="m-text-8">The slab is cast with stone dust: heavy enough to stay put on a table, cool to the touch, quiet when set down.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- editions: two finishes (Chalk, Graphite) with pre-order buttons and a switch (animation: scene:editions) -->
+<section id="editions" class="editions" data-8b-section="editions" aria-labelledby="editions-title">
+  <div class="editions__inner wrap">
+    <header class="editions__head">
+      <h2 id="editions-title" class="m-text-2" data-8b-motion="deboss">Two finishes. The same eleven keys.</h2>
+      <p class="m-text">Chalk disappears into pale walls. Graphite settles into dark wood and slate. Both ship with the woven back, a charging cable and a battery that lasts about two years.</p>
+    </header>
+    <ul class="editions__list">
+      <li class="editions__item editions__item--chalk">
+        <div class="editions__panel" aria-hidden="true">
+          <span class="editions__diamond"></span>
+          <span class="m-key e-up"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M12 6.5 19 17H5z"/></svg></span></span>
+          <span class="m-key e-left"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M6.5 12 17 5v14z"/></svg></span></span>
+          <span class="m-key e-ok"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label">OK</span></span>
+          <span class="m-key e-right"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M17.5 12 7 19V5z"/></svg></span></span>
+          <span class="m-key e-down"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M12 17.5 5 7h14z"/></svg></span></span>
+          <span class="m-key e-prev"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M6.5 12 17 5v14z"/></svg></span></span>
+          <span class="m-key e-next"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M17.5 12 7 19V5z"/></svg></span></span>
+          <span class="m-key e-play"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span></span>
+          <span class="m-key e-pause"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M7.5 6h3v12h-3zm6 0h3v12h-3z"/></svg></span></span>
+          <span class="m-key e-plus"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg></span></span>
+          <span class="m-key e-minus"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"><svg viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span>
+        </div>
+        <div class="editions__body">
+          <h3 class="m-text-5">Chalk</h3>
+          <p class="m-text-8">For pale plaster, white tile and rooms that get the morning.</p>
+          <p class="editions__price"><data value="189">€189</data></p>
+          <a class="m-btn" href="#contact"><span class="m-btn__dent" aria-hidden="true"></span><span class="m-btn__label">Pre-order Chalk</span></a>
+        </div>
+      </li>
+      <li class="editions__item editions__item--graphite">
+        <div class="editions__panel" aria-hidden="true">
+          <span class="editions__diamond"></span>
+          <span class="m-key-3 e-up"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M12 6.5 19 17H5z"/></svg></span></span>
+          <span class="m-key-3 e-left"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M6.5 12 17 5v14z"/></svg></span></span>
+          <span class="m-key-3 e-ok"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label">OK</span></span>
+          <span class="m-key-3 e-right"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M17.5 12 7 19V5z"/></svg></span></span>
+          <span class="m-key-3 e-down"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M12 17.5 5 7h14z"/></svg></span></span>
+          <span class="m-key-3 e-prev"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M6.5 12 17 5v14z"/></svg></span></span>
+          <span class="m-key-3 e-next"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M17.5 12 7 19V5z"/></svg></span></span>
+          <span class="m-key-3 e-play"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg></span></span>
+          <span class="m-key-3 e-pause"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M7.5 6h3v12h-3zm6 0h3v12h-3z"/></svg></span></span>
+          <span class="m-key-3 e-plus"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg></span></span>
+          <span class="m-key-3 e-minus"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span>
+        </div>
+        <div class="editions__body">
+          <h3 class="m-text-5">Graphite</h3>
+          <p class="m-text-8">For dark wood, slate and the rooms you mostly use at night.</p>
+          <p class="editions__price"><data value="189">€189</data></p>
+          <a class="m-btn" href="#contact"><span class="m-btn__dent" aria-hidden="true"></span><span class="m-btn__label">Pre-order Graphite</span></a>
+        </div>
+      </li>
+    </ul>
+    <p class="m-text-8 editions__terms">Any two panels for <data value="340">€340</data>. Charged only when your panel leaves the studio; thirty days to send it back.</p>
+    <div class="editions__switch" aria-hidden="true">
+      <span class="m-tick"><span class="m-tick__label">Graphite</span><span class="m-tick__line" aria-hidden="true"></span></span>
+      <span class="m-key editions__key"><span class="m-key__cap"><span class="m-key__dent"></span></span><span class="m-key__label"></span></span>
+    </div>
+    <div class="editions__floor"></div>
+  </div>
+</section>
+
+<!-- faq: questions and answers (native <details>) (animation: scene:faq) -->
+<section id="faq" class="faq" data-8b-section="faq" aria-labelledby="faq-title">
+  <div class="faq__flood" aria-hidden="true"></div>
+  <div class="faq__inner wrap">
+    <header class="faq__head">
+      <h2 id="faq-title" class="m-text-6" data-8b-motion="deboss">Before you press order.</h2>
+      <p class="m-text-9">Short answers to what people ask the studio most. Anything else, ask a person below.</p>
+    </header>
+    <div class="faq__list">
+      <details class="faq__item" data-8b-motion="rise">
+        <summary><span>Does Hushkey need its own hub?</span><span class="m-key-3" aria-hidden="true"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg class="is-plus" viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg><svg class="is-minus" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span></summary>
+        <p class="m-text">No. It joins the hub your home already has over the open smart-home standards, and it keeps working on its own when the internet drops.</p>
+      </details>
+      <details class="faq__item" data-8b-motion="rise">
+        <summary><span>How long does the battery last?</span><span class="m-key-3" aria-hidden="true"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg class="is-plus" viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg><svg class="is-minus" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span></summary>
+        <p class="m-text">About two years of everyday pressing. It charges over USB-C in an afternoon, and the keys keep their positions while it does.</p>
+      </details>
+      <details class="faq__item" data-8b-motion="rise">
+        <summary><span>Can I change what each key does?</span><span class="m-key-3" aria-hidden="true"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg class="is-plus" viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg><svg class="is-minus" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span></summary>
+        <p class="m-text">Yes, once, on a setup page on your phone. After that the panel works without the app — that is rather the point.</p>
+      </details>
+      <details class="faq__item" data-8b-motion="rise">
+        <summary><span>How do chords work?</span><span class="m-key-3" aria-hidden="true"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg class="is-plus" viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg><svg class="is-minus" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span></summary>
+        <p class="m-text">Hold any two keys for a second and Hushkey saves what the room is doing as a chord. Press the same pair again and the room returns to it.</p>
+      </details>
+      <details class="faq__item" data-8b-motion="rise">
+        <summary><span>How does it mount?</span><span class="m-key-3" aria-hidden="true"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg class="is-plus" viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg><svg class="is-minus" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span></summary>
+        <p class="m-text">The woven back holds to smooth walls, glass and tile. Lift from the bottom edge to move it: no screws, no marks, no adhesive.</p>
+      </details>
+      <details class="faq__item" data-8b-motion="rise">
+        <summary><span>When does it ship?</span><span class="m-key-3" aria-hidden="true"><span class="m-key-3__cap"><span class="m-key-3__dent"></span></span><span class="m-key-3__label"><svg class="is-plus" viewBox="0 0 24 24"><path d="M11 5h2v14h-2zM5 11h14v2H5z"/></svg><svg class="is-minus" viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></span></span></summary>
+        <p class="m-text">The first Chalk and Graphite panels ship in March. Pre-orders are charged only when your panel leaves the studio.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- contact: email, phone and a contact form (placeholders) -->
+<section id="contact" class="contact" data-8b-section="contact" aria-labelledby="contact-title">
+  <div class="contact__inner wrap">
+    <div class="contact__head">
+      <h2 id="contact-title" class="m-text-6" data-8b-motion="deboss">Ask someone who has pressed every key.</h2>
+      <p class="m-text">Questions about your hub, a house with many rooms or a trade order — the studio answers within a working day.</p>
+      <dl class="contact__details">
+        <div><dt class="m-text-9">Email</dt><dd><a data-8b-placeholder="email" class="m-link" href="mailto:hello@hushkey.example">hello@hushkey.example</a></dd></div>
+        <div><dt class="m-text-9">Phone</dt><dd><a data-8b-placeholder="phone" class="m-link" href="tel:+31100000000">+31 10 000 0000</a></dd></div>
+        <div><dt class="m-text-9">Studio</dt><dd class="m-text">Rotterdam, open Thursdays by appointment</dd></div>
+      </dl>
+    </div>
+    <form data-8b-placeholder="form" class="contact__form" novalidate data-sent="Thank you — the studio will reply within a working day." data-invalid="Please add your name, a valid email and a few words.">
+      <div class="contact__field" data-8b-motion="rise"><label class="m-text-4" for="contact-name">Name</label><input class="m-field" id="contact-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="contact__field" data-8b-motion="rise"><label class="m-text-4" for="contact-email">Email</label><input class="m-field" id="contact-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="contact__field contact__field--wide" data-8b-motion="rise"><label class="m-text-4" for="contact-topic">About</label><select class="m-field" id="contact-topic" name="topic"><option>A pre-order</option><option>Setting up with my hub</option><option>A trade or multi-room order</option><option>Something else</option></select></div>
+      <div class="contact__field contact__field--wide" data-8b-motion="rise"><label class="m-text-4" for="contact-message">Message</label><textarea class="m-field" id="contact-message" name="message" rows="5" required></textarea></div>
+      <div class="contact__actions">
+        <button class="m-btn-2" type="submit"><span class="m-btn-2__dent" aria-hidden="true"></span><span class="m-btn-2__label">Send message</span></button>
+        <p class="m-text-9 contact__status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- footer: width-filling HUSHKEY wordmark, links, copyright and the Design: 8B credit (animation: scene:footer) -->
+<footer id="footer" class="footer" data-8b-section="footer">
+  <div class="footer__inner wrap">
+    <p class="m-text-6 footer__mark" style="--len:7">HUSHKEY</p>
+    <div class="footer__row">
+      <p class="m-text-3">Tactile home controls</p>
+      <nav class="footer__links" aria-label="Footer">
+        <ul>
+          <li><a class="m-link" href="#states">Keys</a></li>
+          <li><a class="m-link" href="#modes">Modes</a></li>
+          <li><a class="m-link" href="#chords">Chords</a></li>
+          <li><a class="m-link" href="#editions">Finishes</a></li>
+          <li><a class="m-link" href="#faq">FAQ</a></li>
+          <li><a class="m-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="m-text-9">© 2026 Hushkey Studio, Rotterdam · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></p>
+    </div>
+  </div>
+</footer>
+
+
+<script data-8b-part="section-script:nav">
+(() => {
+  const nav = document.getElementById('nav');
+  const openButton = nav.querySelector('.nav__open');
+  const closeButton = nav.querySelector('.nav__close');
+  const menu = document.getElementById('menu');
+  const narrow = window.matchMedia('(max-width: 899px)');
+  const setOpen = open => {
+    if (open) nav.setAttribute('data-open', ''); else nav.removeAttribute('data-open');
+    openButton.setAttribute('aria-expanded', String(open));
+    if (open) { window.lenis?.stop(); closeButton.focus(); } else { window.lenis?.start(); }
+  };
+  openButton.addEventListener('click', () => setOpen(true));
+  closeButton.addEventListener('click', () => { setOpen(false); openButton.focus(); });
+  menu.addEventListener('click', event => { if (event.target.closest('a') && nav.hasAttribute('data-open')) setOpen(false); });
+  document.addEventListener('keydown', event => {
+    if (!nav.hasAttribute('data-open')) return;
+    if (event.key === 'Escape') { setOpen(false); openButton.focus(); return; }
+    if (event.key !== 'Tab') return;
+    const focusable = [...menu.querySelectorAll('a, button')];
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  });
+  narrow.addEventListener('change', () => { if (!narrow.matches && nav.hasAttribute('data-open')) setOpen(false); });
+})();
+</script>
+<script data-8b-part="section-script:hero">
+(() => {
+  const hero = document.getElementById('hero');
+  if (!('IntersectionObserver' in window)) return;
+  new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting) hero.removeAttribute('data-idle'); else hero.setAttribute('data-idle', '');
+  }).observe(hero);
+})();
+</script>
+<script data-8b-part="section-script:states">
+(() => {
+  const keys = [...document.querySelectorAll('#states .m-key-2')];
+  keys.forEach(key => key.addEventListener('click', () => {
+    if (key.hasAttribute('data-all-off')) {
+      keys.forEach(other => { if (other.hasAttribute('aria-pressed')) other.setAttribute('aria-pressed', 'false'); });
+      return;
+    }
+    key.setAttribute('aria-pressed', String(key.getAttribute('aria-pressed') !== 'true'));
+  }));
+})();
+</script>
+
+<script data-8b-part="section-script:contact">
+(() => {
+  const form = document.querySelector('#contact .contact__form');
+  const status = form.querySelector('.contact__status');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const valid = form.checkValidity();
+    status.textContent = valid ? form.dataset.sent : form.dataset.invalid;
+    if (valid) form.reset();
+    else form.querySelector(':invalid')?.focus();
+  });
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js"></script>
+<script data-8b-part="motion-queue">
+(() => {
+  'use strict';
+  const fonts = document.fonts ? document.fonts.ready : Promise.resolve();
+  const parsed = document.readyState === 'loading' ? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true })) : Promise.resolve();
+  const ready = () => Promise.all([fonts, parsed]).then(() => firsts);
+  const nextTask = () => window.scheduler?.yield?.() ?? new Promise(resolve => setTimeout(resolve));
+  const refresh = () => {
+    if (typeof window.refreshScroll === 'function') return window.refreshScroll();
+    window.ScrollTrigger?.sort(); window.ScrollTrigger?.refresh();
+  };
+  const run = (setup, name) => {
+    for (const trigger of window.ScrollTrigger?.getAll() || []) if (!trigger.end && window.ScrollTrigger.getAll().includes(trigger)) trigger.refresh(0, 1);
+    const context = window.gsap.context(() => {});
+    const log = new MutationObserver(() => {});
+    log.observe(document.documentElement, { attributes: true, attributeOldValue: true, subtree: true });
+    let failure = null, records;
+    try { context.add(() => { try { setup(); } catch (error) { failure = error; } }); }
+    finally { records = log.takeRecords(); log.disconnect(); }
+    if (!failure) return true;
+    try { context.revert(); } catch (error) { console.error(name, 'revert failed', error); }
+    for (const { target, attributeName, oldValue } of records.reverse()) {
+      const now = target.getAttribute(attributeName);
+      if (oldValue == null) { if (now != null) target.removeAttribute(attributeName); }
+      else if (now !== oldValue) target.setAttribute(attributeName, oldValue);
+    }
+    console.error(name, failure);
+    return false;
+  };
+  let firsts = Promise.resolve(), tail = null, pending = 0, lazy = null, building = 0;
+  window.queueMotion = (setup, { first = false, near, id } = {}) => {
+    if (!window.gsap || typeof setup !== 'function') return;
+    const name = id || document.currentScript?.getAttribute('data-8b-part') || 'motion';
+    if (near instanceof Element && window.IntersectionObserver) {
+      const watch = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        watch.disconnect();
+        building++;
+        lazy = (lazy || ready()).then(nextTask).then(() => run(setup, name)).finally(() => { if (!--building) refresh(); });
+      }, { rootMargin: '100% 0px' });
+      watch.observe(near);
+      return;
+    }
+    if (first) firsts = firsts.then(() => fonts).then(() => { if (!run(setup, name)) refresh(); });
+    else {
+      pending++;
+      tail = (tail || ready()).then(nextTask).then(() => run(setup, name))
+        .finally(() => { if (!--pending) refresh(); });
+    }
+    window.motionReady = Promise.all([firsts, tail]);
+  };
+  window.adjacent = (a, b) => {
+    const order = [...document.querySelectorAll('[data-8b-section]')].filter(section => section.getAttribute('data-8b-section') !== 'navigation').map(section => section.id);
+    return order.indexOf(a) >= 0 && order[order.indexOf(a) + 1] === b;
+  };
+})();
+</script>
+<script data-8b-part="page-init">
+gsap.registerPlugin(ScrollTrigger, SplitText);
+function refreshScroll() {
+  const bar = document.querySelector('#nav .nav__bar');
+  if (bar && window.lenis) window.lenis.options.anchors = { offset: -(bar.getBoundingClientRect().bottom + 16) };
+  ScrollTrigger.sort();
+  ScrollTrigger.refresh();
+}
+gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+  const bar = document.querySelector('#nav .nav__bar');
+  const lenis = window.lenis = new Lenis({ lerp: .085, wheelMultiplier: .9, anchors: { offset: -((bar ? bar.getBoundingClientRect().bottom : 80) + 16) } });
+  const tick = time => lenis.raf(time * 1000);
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(tick);
+  gsap.ticker.lagSmoothing(0);
+  return () => { gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.destroy(); window.lenis = null; };
+});
+</script>
+<script data-8b-part="motion">
+const effects = {
+  deboss(element, vars = {}) {
+    const rest = getComputedStyle(element).textShadow;
+    const timeline = gsap.timeline(vars);
+    if (rest && rest !== 'none') timeline.fromTo(element, { textShadow: motionHelpers.flipShadow(rest) }, { textShadow: rest, duration: .9, ease: 'power2.inOut' }, 0);
+    return timeline.fromTo(element, { y: -8 }, { y: 0, duration: .9, ease: 'power3.out' }, 0);
+  },
+  rise(element, vars = {}) {
+    return gsap.timeline(vars).fromTo(element, { scale: .9, y: 26 }, { scale: 1, y: 0, duration: 1, ease: 'power3.out' });
+  },
+  contour(element, vars = {}) {
+    const timeline = gsap.timeline(vars);
+    const paths = element.matches('path, line, circle, rect') ? [element] : [...element.querySelectorAll('path, line')];
+    paths.forEach(path => {
+      const length = path.getTotalLength ? path.getTotalLength() : 0;
+      if (length) timeline.fromTo(path, { strokeDasharray: length, strokeDashoffset: length }, { strokeDashoffset: 0, duration: 1.1, ease: 'power2.inOut' }, 0);
+    });
+    element.querySelectorAll('.m-tick__line').forEach(line => timeline.fromTo(line, { scaleY: 0 }, { scaleY: 1, duration: .7, ease: 'power2.out' }, 0));
+    return timeline;
+  }
+};
+const motionHelpers = {
+  press(key, on = true, duration = .3) {
+    const dent = key.querySelector('[class$="__dent"]');
+    const cap = key.querySelector('[class$="__cap"]');
+    return gsap.timeline()
+      .to(dent, { opacity: on ? 1 : 0, duration, ease: 'power1.inOut' }, 0)
+      .to(cap, { scale: on ? .965 : 1, duration, ease: 'power1.inOut' }, 0);
+  },
+  flipShadow(value) {
+    return value.split(/,(?![^(]*\))/).map(part => part.replace(/(-?[\d.]+)px\s+(-?[\d.]+)px/, (match, x, y) => `${x}px ${-parseFloat(y)}px`)).join(',');
+  },
+  contourPath(c1, r1, c2, r2, v = .5, handle = 2.4) {
+    const f = n => Math.round(n * 100) / 100;
+    const point = p => `${f(p[0])} ${f(p[1])}`;
+    const circle = (c, r) => `M ${f(c[0] - r)} ${f(c[1])} a ${f(r)} ${f(r)} 0 1 0 ${f(2 * r)} 0 a ${f(r)} ${f(r)} 0 1 0 ${f(-2 * r)} 0 Z`;
+    if (r2 > r1) return motionHelpers.contourPath(c2, r2, c1, r1, v, handle);
+    const d = Math.hypot(c2[0] - c1[0], c2[1] - c1[1]);
+    if (d <= r1 - r2 + .05) return circle(c1, r1);
+    if (d > r1 + r2 * 2.5) return `${circle(c1, r1)} ${circle(c2, r2)}`;
+    const clamp = n => Math.min(1, Math.max(-1, n));
+    let u1 = 0, u2 = 0;
+    if (d < r1 + r2) {
+      u1 = Math.acos(clamp((r1 * r1 + d * d - r2 * r2) / (2 * r1 * d)));
+      u2 = Math.acos(clamp((r2 * r2 + d * d - r1 * r1) / (2 * r2 * d)));
+    }
+    const angle = Math.atan2(c2[1] - c1[1], c2[0] - c1[0]);
+    const spread = Math.acos(clamp((r1 - r2) / d));
+    const a1 = angle + u1 + (spread - u1) * v, a2 = angle - u1 - (spread - u1) * v;
+    const a3 = angle + Math.PI - u2 - (Math.PI - u2 - spread) * v, a4 = angle - Math.PI + u2 + (Math.PI - u2 - spread) * v;
+    const at = (c, a, r) => [c[0] + r * Math.cos(a), c[1] + r * Math.sin(a)];
+    const p1 = at(c1, a1, r1), p2 = at(c1, a2, r1), p3 = at(c2, a3, r2), p4 = at(c2, a4, r2);
+    const k = Math.min(v * handle, Math.hypot(p1[0] - p3[0], p1[1] - p3[1]) / (r1 + r2)) * Math.min(1, d * 2 / (r1 + r2));
+    const h1 = at(p1, a1 - Math.PI / 2, r1 * k), h2 = at(p2, a2 + Math.PI / 2, r1 * k);
+    const h3 = at(p3, a3 + Math.PI / 2, r2 * k), h4 = at(p4, a4 - Math.PI / 2, r2 * k);
+    return `M ${point(p1)} C ${point(h1)} ${point(h3)} ${point(p3)} A ${f(r2)} ${f(r2)} 0 ${d > r1 ? 1 : 0} 0 ${point(p4)} C ${point(h4)} ${point(h2)} ${point(p2)} A ${f(r1)} ${f(r1)} 0 1 0 ${point(p1)} Z`;
+  }
+};
+['deboss', 'rise', 'contour'].forEach(name => {
+  document.querySelectorAll('[data-8b-section]').forEach(section => {
+    const elements = [...section.querySelectorAll(`[data-8b-motion~="${name}"]`)];
+    if (!elements.length) return;
+    const id = `effect:${name}:${section.id}`;
+    queueMotion(() => gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+      elements.forEach((element, index) => ScrollTrigger.create({
+        id: `${id}:${index}`, trigger: element, start: 'top 88%', once: true,
+        animation: effects[name](element, { delay: name === 'rise' ? (index % 3) * .08 : 0 })
+      }));
+    }), { first: section.getBoundingClientRect().top < innerHeight, id });
+  });
+});
+</script>
+<script data-8b-part="scene:hero">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    if (!adjacent('hero', 'states')) return;
+    const hero = document.getElementById('hero');
+    const stage = hero.querySelector('.hero__stage');
+    const panel = hero.querySelector('.hero__panel');
+    const ring = document.querySelector('#states .states__slot');
+    const order = ['.hero__k-up', '.hero__k-left', '.hero__k-ok', '.hero__k-right', '.hero__k-down', '.hero__seg .m-key', '.hero__k-play', '.hero__k-pause', '.hero__steps .m-key:not(.is-on)'];
+    const keys = order.flatMap(selector => [...hero.querySelectorAll(selector)]);
+    const sink = () => {
+      const most = innerHeight * .26;
+      if (!ring) return most;
+      const top = ring.getBoundingClientRect().top + (parseFloat(getComputedStyle(ring, '::before').top) || 0);
+      return Math.max(0, Math.min(most, top - stage.getBoundingClientRect().bottom - 18));
+    };
+    gsap.set(panel, { willChange: 'transform' });
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'hero:exit', trigger: hero, start: 'bottom bottom', end: 'bottom 25%', scrub: true, invalidateOnRefresh: true
+    } });
+    timeline.fromTo(panel, { y: 0, scale: 1 }, { y: sink, scale: .82, transformOrigin: '50% 100%', duration: 1 }, 0);
+    keys.forEach((key, index) => timeline.add(motionHelpers.press(key, true, .3), .04 + index * (.62 / keys.length)));
+  });
+}, { first: true, id: 'scene:hero' });
+</script>
+<script data-8b-part="scene:states">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    if (!adjacent('hero', 'states')) return;
+    const states = document.getElementById('states');
+    const keys = [...states.querySelectorAll('.states__keys .m-key-2')];
+    const columns = () => getComputedStyle(states.querySelector('.states__keys')).gridTemplateColumns.split(' ').length;
+    const layer = on => keys.forEach(key => { key.style.willChange = on ? 'transform' : ''; });
+    const hint = self => layer(self.progress < 1);
+    layer(true);
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'states:entry', trigger: states, start: 'top bottom', end: 'top 25%', scrub: true, invalidateOnRefresh: true,
+      onEnter: hint, onLeave: hint, onEnterBack: hint, onLeaveBack: hint, onRefresh: hint
+    } });
+    const count = columns();
+    keys.forEach((key, index) => {
+      const wave = (index % count) + Math.floor(index / count);
+      timeline.fromTo(key, { scale: .58, y: 34 }, { scale: 1, y: 0, duration: .5, ease: 'power2.out' }, .08 + wave * .09);
+    });
+    timeline.to({}, { duration: .01 }, 1);
+    return () => layer(false);
+  });
+}, { first: true, id: 'scene:states' });
+</script>
+<script data-8b-part="scene:modes">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const modes = document.getElementById('modes');
+    const track = modes.querySelector('.modes__track');
+    const items = [...modes.querySelectorAll('.modes__item')];
+    const keyFor = item => modes.querySelector(`.modes__k-${item.dataset.dir}`);
+    const from = { up: 'inset(0% 0% 100% 0%)', right: 'inset(0% 0% 0% 100%)', down: 'inset(100% 0% 0% 0%)', left: 'inset(0% 100% 0% 0%)' };
+    modes.setAttribute('data-stage', '');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'modes', trigger: track, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true
+    } });
+    timeline.add(motionHelpers.press(keyFor(items[0]), true, .25), 0);
+    items.slice(1).forEach((item, index) => {
+      const at = .55 + index * 1.25;
+      timeline.add(motionHelpers.press(keyFor(items[index]), false, .2), at)
+        .add(motionHelpers.press(keyFor(item), true, .2), at + .08)
+        .fromTo(item, { clipPath: from[item.dataset.dir] || from.right }, { clipPath: 'inset(0% 0% 0% 0%)', duration: .85, ease: 'power2.inOut' }, at + .2)
+        .fromTo(item.querySelector('img'), { scale: 1.14 }, { scale: 1, duration: .85, ease: 'power2.out' }, at + .2)
+        .set(item, { clipPath: 'none' }, at + 1.06);
+    });
+    timeline.to({}, { duration: .35 });
+    return () => modes.removeAttribute('data-stage');
+  });
+}, { id: 'scene:modes' });
+</script>
+<script data-8b-part="scene:dimmer">
+queueMotion(() => {
+  gsap.matchMedia().add({
+    wide: '(prefers-reduced-motion: no-preference) and (min-width: 900px)',
+    narrow: '(prefers-reduced-motion: no-preference) and (max-width: 899px)'
+  }, context => {
+    const rig = document.querySelector('#dimmer .dimmer__rig');
+    const img = rig.querySelector('.dimmer__photo img');
+    const groove = rig.querySelector('.dimmer__groove');
+    const thumb = rig.querySelector('.dimmer__thumb');
+    const plus = rig.querySelector('.dimmer__plus');
+    const wide = context.conditions.wide;
+    const travel = () => wide ? groove.clientHeight - 16 - thumb.offsetHeight : -(groove.clientWidth - 16 - thumb.offsetWidth);
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'dimmer', trigger: rig, start: 'top 85%', end: 'top 14%', scrub: true, invalidateOnRefresh: true
+    } });
+    timeline.fromTo(img, { filter: 'grayscale(1) brightness(0.34)' }, { filter: 'grayscale(0) brightness(1)', duration: 1, ease: 'power1.in' }, 0)
+      .fromTo(thumb, wide ? { y: travel } : { x: travel }, wide ? { y: 0, duration: 1 } : { x: 0, duration: 1 }, 0)
+      .add(motionHelpers.press(plus, true, .08), 0)
+      .add(motionHelpers.press(plus, false, .08), .92);
+  });
+}, { id: 'scene:dimmer' });
+</script>
+<script data-8b-part="scene:chords">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const chords = document.getElementById('chords');
+    const track = chords.querySelector('.chords__track');
+    const art = chords.querySelector('.chords__art');
+    const a = art.querySelector('.chords__a');
+    const b = art.querySelector('.chords__b');
+    const path = art.querySelector('.chords__contour path');
+    const result = chords.querySelector('.chords__result');
+    const restPath = path.getAttribute('d');
+    const A = { x: 20, y: 15, r: 10.2 };
+    const B = { x: 12.35, y: 25.51, r: 6.1 };
+    let em = parseFloat(getComputedStyle(art).fontSize) || 10;
+    const spread = () => Math.min(17, innerWidth / em * .3);
+    const draw = () => {
+      const ax = A.x + gsap.getProperty(a, 'x') / em, ay = A.y + gsap.getProperty(a, 'y') / em;
+      const bx = B.x + gsap.getProperty(b, 'x') / em, by = B.y + gsap.getProperty(b, 'y') / em;
+      path.setAttribute('d', motionHelpers.contourPath([ax, ay], A.r, [bx, by], B.r));
+    };
+    chords.setAttribute('data-stage', '');
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, onUpdate: draw, scrollTrigger: {
+      id: 'chords', trigger: track, start: 'top top', end: 'bottom bottom', scrub: true, invalidateOnRefresh: true,
+      onRefreshInit: () => { em = parseFloat(getComputedStyle(art).fontSize) || em; }, onRefresh: draw
+    } });
+    timeline.fromTo(a, { x: () => spread() * em * .5, y: () => -3 * em }, { x: 0, y: 0, duration: .72, ease: 'power1.inOut' }, 0)
+      .fromTo(b, { x: () => -spread() * em, y: () => -9 * em }, { x: 0, y: 0, duration: .72, ease: 'power2.inOut' }, 0)
+      .fromTo([a, b].map(key => key.querySelector('.m-key__dent')), { opacity: 0 }, { opacity: 1, duration: .08 }, .78)
+      .fromTo([a, b].map(key => key.querySelector('.m-key__cap')), { scale: 1 }, { scale: .965, duration: .08 }, .78)
+      .fromTo(result, { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: .14, ease: 'power2.out' }, .82)
+      .to({}, { duration: .04 }, .96);
+    draw();
+    return () => { chords.removeAttribute('data-stage'); path.setAttribute('d', restPath); };
+  });
+}, { id: 'scene:chords' });
+</script>
+<script data-8b-part="scene:editions">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const editions = document.getElementById('editions');
+    editions.querySelectorAll('.editions__item').forEach((item, index) => {
+      gsap.fromTo(item.querySelector('.editions__panel'), { rotateX: 66, y: 60, scale: .9 }, { rotateX: 0, y: 0, scale: 1, ease: 'none', scrollTrigger: {
+        id: `editions:panel-${index}`, trigger: item, start: 'top 94%', end: 'top 40%', scrub: true
+      } });
+    });
+    if (adjacent('editions', 'faq')) {
+      const key = editions.querySelector('.editions__key');
+      gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+        id: 'editions:exit', trigger: editions, start: 'bottom bottom', end: 'bottom 30%', scrub: true
+      } })
+        .add(motionHelpers.press(key, true, .16), 0)
+        .fromTo(key, { y: 0 }, { y: 8, duration: .16, ease: 'power2.out' }, 0)
+        .to({}, { duration: .84 }, .16);
+    }
+  });
+}, { id: 'scene:editions' });
+</script>
+<script data-8b-part="scene:faq">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    if (!adjacent('editions', 'faq')) return;
+    const faq = document.getElementById('faq');
+    const flood = faq.querySelector('.faq__flood');
+    const key = document.querySelector('#editions .editions__key');
+    let geo = { x: 0, reach: 0, r0: 40, mid: 600, r1: 2000 };
+    const measure = () => {
+      const keyBox = key.getBoundingClientRect();
+      const faqBox = faq.getBoundingClientRect();
+      const x = keyBox.left + keyBox.width / 2 - faqBox.left;
+      const reach = Math.max(0, faqBox.top - (keyBox.top + keyBox.height / 2 - gsap.getProperty(key, 'y')));
+      geo = { x, reach, r0: keyBox.width * .42, mid: Math.max(x, faqBox.width - x) * 1.08, r1: Math.hypot(Math.max(x, faqBox.width - x), reach + faqBox.height) + 2 };
+      faq.style.setProperty('--faq-reach', `${reach}px`);
+    };
+    faq.setAttribute('data-flood', '');
+    measure();
+    const clip = radius => `circle(${radius}px at ${geo.x}px 0px)`;
+    const split = Math.min(.34, Math.max(.1, faq.clientWidth / 3600));
+    gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'faq:entry', trigger: faq, start: 'top bottom', end: 'top 30%', scrub: true, invalidateOnRefresh: true, onRefreshInit: measure
+    } })
+      .fromTo(flood, { clipPath: () => clip(geo.r0) }, { clipPath: () => clip(geo.mid), duration: split, ease: 'sine.in' }, 0)
+      .fromTo(flood, { clipPath: () => clip(geo.mid) }, { clipPath: () => clip(geo.r1), duration: 1 - split, ease: 'power2.out', immediateRender: false }, split)
+      .set(flood, { clipPath: 'none' }, 1);
+    return () => { faq.removeAttribute('data-flood'); faq.style.removeProperty('--faq-reach'); };
+  });
+}, { id: 'scene:faq' });
+</script>
+<script data-8b-part="scene:footer">
+queueMotion(() => {
+  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
+    const footer = document.getElementById('footer');
+    const mark = footer.querySelector('.footer__mark');
+    const split = SplitText.create(mark, { type: 'chars' });
+    const rest = getComputedStyle(mark).textShadow;
+    const raised = motionHelpers.flipShadow(rest);
+    const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
+      id: 'footer', trigger: footer, start: 'top 85%', end: 'bottom bottom', scrub: true
+    } });
+    const restColor = getComputedStyle(mark).color;
+    const liftColor = getComputedStyle(document.documentElement).getPropertyValue('--color-8').trim();
+    split.chars.forEach((char, index) => timeline.fromTo(char, { y: '-0.16em', color: liftColor, textShadow: raised }, { y: 0, color: restColor, textShadow: rest, duration: .36, ease: 'power2.inOut' }, index * .1));
+    return () => split.revert();
+  });
+}, { near: document.getElementById('footer'), id: 'scene:footer' });
+</script>
+</body>
+</html>
