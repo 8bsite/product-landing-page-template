@@ -1,5 +1,7 @@
 # Free HTML product landing page template with GSAP scroll animations — Hushkey
 
+**Product launch and pre-order page for a physical device: a free HTML template in one file, with GSAP scroll animations, no build step, MIT license. Made by [8B](https://8b.com/), the AI website builder.**
+
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) ![one HTML file: no build](https://img.shields.io/badge/one%20HTML%20file-no%20build-orange) ![GSAP: ScrollTrigger](https://img.shields.io/badge/GSAP-ScrollTrigger-88ce02) ![Lighthouse mobile: 93](https://img.shields.io/badge/Lighthouse%20mobile-93-brightgreen)
 
 **[Live demo](https://8bsite.github.io/product-landing-page-template/)** · **[Use this template](https://github.com/new?template_name=product-landing-page-template&template_owner=8bsite)** · **[Download ZIP](https://github.com/8bsite/product-landing-page-template/archive/refs/heads/main.zip)**
@@ -16,18 +18,20 @@ Good for: hardware or gadget launch; pre-order or waitlist page; smart-home or I
 
 Pick one:
 
-- **No code.** Download the ZIP, unzip it, replace the contacts and texts in `index.html`, put `index.html` into an empty folder and drag that folder onto [Netlify Drop](https://app.netlify.com/drop). The page is online in a minute.
-- **On GitHub.** Click **[Use this template](https://github.com/new?template_name=product-landing-page-template&template_owner=8bsite)** to get your own copy, then **Settings → Pages → Deploy from a branch → main**. Your site appears at `https://<you>.github.io/<repo>/`.
-- **With an AI coding agent** (Claude Code, Codex, Cursor, Windsurf…). Download the files into your project:
+- **With an AI coding agent** (Claude Code, Codex, Cursor, Windsurf…). Download the files into your project (in Windows PowerShell type `curl.exe`):
   ```bash
   curl -LO https://raw.githubusercontent.com/8bsite/product-landing-page-template/main/index.html
   curl -LO https://raw.githubusercontent.com/8bsite/product-landing-page-template/main/AGENTS.md
+  curl -LO https://raw.githubusercontent.com/8bsite/product-landing-page-template/main/LICENSE
+  curl -LO https://raw.githubusercontent.com/8bsite/product-landing-page-template/main/CREDITS.md
   ```
   Then give your agent this prompt:
   ```text
   Read AGENTS.md, then edit index.html. Use this template as the base for a launch page for <your product: what it is, who it is for, price, how to buy>. Keep the layout, the motion and the single-file format; replace the brand name, copy, photos, prices, links and contacts, and recolour it through the CSS variables if needed.
   ```
-  Give the agent the downloaded file, not a link to the live page: agents read links as summaries and would rebuild a different page.
+  Give the agent the downloaded file, not a link: an agent reads a link as a summary and would rebuild a different page.
+- **No code.** Download the ZIP, unzip it, replace the contacts and texts in `index.html`, put `index.html` into an empty folder and drag that folder onto [Netlify Drop](https://app.netlify.com/drop). The page is online in a minute.
+- **On GitHub.** Click **[Use this template](https://github.com/new?template_name=product-landing-page-template&template_owner=8bsite)** to get your own copy, then **Settings → Pages → Deploy from a branch → main**. Your site appears at `https://<you>.github.io/<repo>/`.
 
 ## What's on the page
 
@@ -47,13 +51,13 @@ Pick one:
 ## Before you publish
 
 - Replace everything marked `data-8b-placeholder` (email, phone, form, social preview image, favicon) and the invented demo facts — prices, dates, address. [AGENTS.md](AGENTS.md) lists them.
-- The contact form does not send anything yet: connect it to a form service (Formspree, Netlify Forms) or remove it.
+- The contact form does not send anything yet: connect it to a form service (Formspree, Netlify Forms) or remove it; [AGENTS.md](AGENTS.md) shows both.
 
 ## Customize
 
 - **Colours and fonts**: CSS variables in the `:root` block at the top of `<head>`.
 - **Text**: edit it in place. A big display line with `style="--len:N"` fills its width: set N to its new number of characters.
-- **Photos**: replace the image URLs (they come from Unsplash now) and the `alt` texts.
+- **Photos**: replace `src`, delete `srcset` and `sizes` (they list Unsplash sizes) and update the `alt` texts.
 - **Animations**: each section's animation is one `<script data-8b-part="scene:<id>">` block at the end of the file. For native scroll, delete the Lenis block in `page-init`.
 
 ## For developers

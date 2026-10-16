@@ -1,4 +1,6 @@
-# Credits — Hushkey
+# Credits
+
+Third-party photos, fonts and libraries used by `index.html`.
 
 ## Photos (Unsplash License)
 
