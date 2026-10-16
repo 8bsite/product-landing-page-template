@@ -40,7 +40,7 @@ Pick one:
 - **Up is ready. Down is on.** — keyboard of eight toggle keys (Up is ready / Down is on)
 - **One pad. Four moods of the house.** — sticky stage: D-pad drives four room photos (Morning, Desk, Evening, Away)
 - **Hold plus. The light arrives slowly.** — fader + plus key over one room photo (grey to colour on scroll)
-- **No screen to wake. Off** — short statement: no screen, no app
+- **No screen to wake.** — short statement: no screen, no app
 - **Press two at once. Get a third.** — two keys meet and their outlines melt into one (chords)
 - **Made to be found in the dark.** — three material cards with texture photos
 - **Two finishes. The same eleven keys.** — two finishes (Chalk, Graphite) with pre-order buttons and a switch
@@ -50,7 +50,7 @@ Pick one:
 
 ## Before you publish
 
-- Replace everything marked `data-8b-placeholder` (email, phone, form, social preview image, favicon) and the invented demo facts — prices, dates, address. [AGENTS.md](AGENTS.md) lists them.
+- Replace everything marked `data-8b-placeholder` (social preview image, favicon, email, phone, form) and the invented demo facts — prices, dates, address. [AGENTS.md](AGENTS.md) lists them.
 - The contact form does not send anything yet: connect it to a form service (Formspree, Netlify Forms) or remove it; [AGENTS.md](AGENTS.md) shows both.
 
 ## Customize
