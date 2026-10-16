@@ -4,7 +4,9 @@
 
 **[Live demo](https://8bsite.github.io/product-landing-page-template/)** · **[Use this template](https://github.com/new?template_name=product-landing-page-template&template_owner=8bsite)** · **[Download ZIP](https://github.com/8bsite/product-landing-page-template/archive/refs/heads/main.zip)**
 
-<img src="previews/scroll.gif" alt="Hushkey, a free HTML template: scrolling through the first sections on a desktop" width="74%"> <img src="previews/phone.png" alt="Hushkey, a free HTML template: first screen on a phone" width="24%">
+<img src="previews/desktop.png" alt="Hushkey, a free HTML template: first screen on a desktop" width="74%"> <img src="previews/phone.png" alt="Hushkey, a free HTML template: first screen on a phone" width="24%">
+
+<p align="center"><img src="previews/scroll.gif" alt="Hushkey, a free HTML template: scrolling through the first sections on a desktop" width="60%"><br><sub>Scroll animation</sub></p>
 
 A one-page launch site for a palm-sized smart-home remote with eleven soft keys. Grey, tactile, monochrome; the keys are drawn in HTML and CSS and press, swell and melt into each other as you scroll.
 
